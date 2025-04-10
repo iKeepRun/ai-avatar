@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ai-avatar-common" />
+        <module name="ai-avatar-core" />
+        <module name="ai-avatar-gateway" />
+        <module name="ai-avatar-user" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ai-avatar-common" options="-parameters" />
+      <module name="ai-avatar-core" options="-parameters" />
+      <module name="ai-avatar-gateway" options="-parameters" />
+      <module name="ai-avatar-user" options="-parameters" />
+    </option>
+  </component>
+</project>

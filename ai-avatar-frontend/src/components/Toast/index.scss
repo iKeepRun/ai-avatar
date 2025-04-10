@@ -1,0 +1,33 @@
+.toast-component {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 12px 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+
+  .toast-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    
+    &.icon-success {
+      background: url('../assets/success.png') no-repeat;
+      background-size: contain;
+    }
+    
+    &.icon-error {
+      background: url('../assets/error.png') no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .toast-message {
+    color: #fff;
+    font-size: 14px;
+  }
+} 

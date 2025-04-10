@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI头像生成小程序原型</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        /* 原型容器 */
+        .prototype-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        /* 页面框架 */
+        .page {
+            background: white;
+            border-radius: 16px;
+            padding: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* 页面标题 */
+        .page-title {
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 12px;
+        }
+
+        /* 通用按钮样式 */
+        .btn {
+            background: #07c160;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-secondary {
+            background: #f2f2f2;
+            color: #333;
+        }
+
+        /* 底部导航栏 */
+        .tab-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 1px solid #eee;
+        }
+
+        .tab-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .tab-item i {
+            font-size: 20px;
+            margin-bottom: 2px;
+        }
+
+        .tab-item.active {
+            color: #07c160;
+        }
+
+        /* 图片上传区域 */
+        .upload-area {
+            border: 2px dashed #ddd;
+            border-radius: 12px;
+            padding: 40px 20px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        /* 风格模板网格 */
+        .style-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            padding: 12px;
+        }
+
+        .style-item {
+            background: #f8f8f8;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+        }
+
+        /* 调整控件 */
+        .adjustment-control {
+            padding: 12px;
+            margin: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .slider-control {
+            width: 100%;
+            margin: 8px 0;
+        }
+
+        /* 会员卡片 */
+        .vip-card {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            border-radius: 12px;
+            padding: 20px;
+            color: white;
+            margin: 12px;
+        }
+
+        /* 历史记录项 */
+        .history-item {
+            display: flex;
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            gap: 12px;
+        }
+
+        .history-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            background: #eee;
+        }
+
+        /* 分享面板 */
+        .share-panel {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            padding: 20px;
+        }
+
+        .share-item {
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .share-item i {
+            font-size: 24px;
+            margin-bottom: 4px;
+        }
+
+        /* 加载状态 */
+        .loading {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255,255,255,0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .loading i {
+            font-size: 40px;
+            color: #07c160;
+            margin-bottom: 12px;
+        }
+
+        /* 添加新的样式 */
+        .slider-control {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background: #eee;
+            outline: none;
+        }
+
+        .slider-control::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #07c160;
+            cursor: pointer;
+            border: 2px solid white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .adjustment-control {
+            margin-bottom: 20px;
+        }
+
+        /* 优化按钮样式 */
+        .btn {
+            transition: all 0.2s;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        /* 标签页导航样式 */
+        .tabs-nav {
+            position: relative;
+            border-bottom: 1px solid #eee;
+            background: white;
+        }
+
+        .tabs-scroll {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE/Edge */
+            padding: 0 12px;
+        }
+
+        .tabs-scroll::-webkit-scrollbar {
+            display: none; /* Chrome/Safari/Opera */
+        }
+
+        .tab-item {
+            padding: 12px 16px;
+            white-space: nowrap;
+            color: #666;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            position: relative;
+        }
+
+        .tab-item i {
+            font-size: 16px;
+        }
+
+        .tab-item.active {
+            color: #07c160;
+        }
+
+        .tab-item.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 16px;
+            right: 16px;
+            height: 2px;
+            background: #07c160;
+            border-radius: 1px;
+        }
+
+        /* 调整内容区域样式 */
+        .adjustment-content {
+            padding: 16px;
+            overflow-y: auto;
+            height: calc(100% - 120px); /* 减去标签页和底部按钮的高度 */
+        }
+
+        /* 颜色选择器样式 */
+        .color-picker {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .color-item {
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            border: 2px solid transparent;
+            cursor: pointer;
+        }
+
+        .color-item:nth-child(1) { background: #000; }
+        .color-item:nth-child(2) { background: #8B4513; }
+        .color-item:nth-child(3) { background: #FFD700; }
+        .color-item:nth-child(4) { background: #ADD8E6; }
+
+        .color-item.active {
+            border-color: #07c160;
+        }
+
+        .color-item.add {
+            border: 1px dashed #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .color-item.add i {
+            color: #999;
+        }
+
+        /* 底部按钮组样式 */
+        .bottom-buttons {
+            padding: 12px 16px;
+            display: flex;
+            gap: 12px;
+            border-top: 1px solid #eee;
+            background: white;
+        }
+
+        .bottom-buttons .btn {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="prototype-container">
+        <!-- 首页 -->
+        <div class="page">
+            <div class="page-title">AI头像生成</div>
+            <div class="upload-area">
+                <i class="fas fa-camera fa-2x" style="color: #666; margin-bottom: 12px;"></i>
+                <div>点击上传照片或拍摄</div>
+                <div style="font-size: 12px; color: #999; margin-top: 8px;">支持JPG、PNG格式</div>
+            </div>
+            <div style="padding: 0 20px;">
+                <button class="btn" style="width: 100%;">
+                    <i class="fas fa-plus"></i>
+                    创建新头像
+                </button>
+            </div>
+            <div class="tab-bar">
+                <div class="tab-item active">
+                    <i class="fas fa-home"></i>
+                    <span>首页</span>
+                </div>
+                <div class="tab-item">
+                    <i class="fas fa-history"></i>
+                    <span>历史</span>
+                </div>
+                <div class="tab-item">
+                    <i class="fas fa-user"></i>
+                    <span>我的</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 风格选择页 -->
+        <div class="page">
+            <div class="page-title">选择风格</div>
+            <div class="style-grid">
+                <div class="style-item">
+                    <i class="fas fa-paint-brush fa-2x" style="color: #07c160;"></i>
+                    <div>吉卜力风格</div>
+                </div>
+                <div class="style-item">
+                    <i class="fas fa-smile fa-2x" style="color: #07c160;"></i>
+                    <div>美式卡通</div>
+                </div>
+                <div class="style-item">
+                    <i class="fas fa-robot fa-2x" style="color: #07c160;"></i>
+                    <div>赛博朋克</div>
+                </div>
+                <div class="style-item">
+                    <i class="fas fa-palette fa-2x" style="color: #07c160;"></i>
+                    <div>水彩艺术</div>
+                </div>
+            </div>
+            <div style="padding: 20px;">
+                <div style="font-size: 14px; color: #666; margin-bottom: 12px;">
+                    <i class="fas fa-crown" style="color: #FFD700;"></i>
+                    会员专属风格
+                </div>
+                <div class="style-grid" style="opacity: 0.5;">
+                    <div class="style-item">
+                        <i class="fas fa-star fa-2x"></i>
+                        <div>高级风格1</div>
+                    </div>
+                    <div class="style-item">
+                        <i class="fas fa-star fa-2x"></i>
+                        <div>高级风格2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 编辑页面（优化版） -->
+        <div class="page">
+            <div class="page-title">调整细节</div>
+            <div style="display: flex; flex-direction: column; height: calc(100% - 50px);">
+                <!-- 实时预览区域 -->
+                <div style="padding: 12px;">
+                    <div style="position: relative;">
+                        <div style="width: 100%; aspect-ratio: 1; background: #f5f5f5; border-radius: 12px; overflow: hidden;">
+                            <!-- 预览图 -->
+                            <div style="width: 100%; height: 100%; background-size: cover; background-position: center;"></div>
+                        </div>
+                        <!-- 对比切换按钮 -->
+                        <button class="btn btn-secondary" style="position: absolute; right: 8px; bottom: 8px; padding: 8px; border-radius: 50%;">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 调整控制面板 -->
+                <div style="flex: 1; background: white; border-radius: 20px 20px 0 0; box-shadow: 0 -2px 10px rgba(0,0,0,0.05);">
+                    <!-- 标签页导航 -->
+                    <div class="tabs-nav">
+                        <div class="tabs-scroll">
+                            <div class="tab-item active">
+                                <i class="fas fa-sliders-h"></i>
+                                基础调整
+                            </div>
+                            <div class="tab-item">
+                                <i class="fas fa-magic"></i>
+                                风格调整
+                            </div>
+                            <div class="tab-item">
+                                <i class="fas fa-palette"></i>
+                                色彩调整
+                            </div>
+                            <div class="tab-item">
+                                <i class="fas fa-star"></i>
+                                特效滤镜
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 调整内容区域 -->
+                    <div class="adjustment-content">
+                        <!-- 基础调整面板 -->
+                        <div class="panel active">
+                            <div class="adjustment-control">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                    <div>五官比例</div>
+                                    <div style="color: #999;">50%</div>
+                                </div>
+                                <input type="range" class="slider-control" value="50">
+                            </div>
+
+                            <div class="adjustment-control">
+                                <div style="margin-bottom: 8px;">发色</div>
+                                <div class="color-picker">
+                                    <div class="color-item active"></div>
+                                    <div class="color-item"></div>
+                                    <div class="color-item"></div>
+                                    <div class="color-item"></div>
+                                    <div class="color-item add">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="adjustment-control">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                    <div>背景复杂度</div>
+                                    <div style="color: #999;">30%</div>
+                                </div>
+                                <input type="range" class="slider-control" value="30">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 底部按钮组 -->
+                    <div class="bottom-buttons">
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-undo"></i>
+                            重置
+                        </button>
+                        <button class="btn">
+                            <i class="fas fa-check"></i>
+                            确认
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 生成结果页 -->
+        <div class="page">
+            <div class="page-title">生成结果</div>
+            <div style="padding: 20px;">
+                <div style="width: 100%; height: 280px; background: #eee; border-radius: 12px; margin-bottom: 20px;"></div>
+                <div style="display: flex; gap: 12px;">
+                    <button class="btn" style="flex: 1;">
+                        <i class="fas fa-download"></i>
+                        保存
+                    </button>
+                    <button class="btn btn-secondary" style="flex: 1;">
+                        <i class="fas fa-share"></i>
+                        分享
+                    </button>
+                </div>
+            </div>
+            <div class="share-panel">
+                <div class="share-item">
+                    <i class="fab fa-weixin" style="color: #07c160;"></i>
+                    <div>微信</div>
+                </div>
+                <div class="share-item">
+                    <i class="fas fa-comment" style="color: #07c160;"></i>
+                    <div>朋友圈</div>
+                </div>
+                <div class="share-item">
+                    <i class="fas fa-link" style="color: #1890ff;"></i>
+                    <div>复制链接</div>
+                </div>
+                <div class="share-item">
+                    <i class="fas fa-qrcode" style="color: #666;"></i>
+                    <div>二维码</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 历史记录页 -->
+        <div class="page">
+            <div class="page-title">历史记录</div>
+            <div class="history-item">
+                <div class="history-image"></div>
+                <div style="flex: 1;">
+                    <div>吉卜力风格头像</div>
+                    <div style="font-size: 12px; color: #999;">2024-01-20 12:30</div>
+                </div>
+                <button class="btn btn-secondary" style="padding: 8px;">
+                    <i class="fas fa-edit"></i>
+                </button>
+            </div>
+            <div class="history-item">
+                <div class="history-image"></div>
+                <div style="flex: 1;">
+                    <div>赛博朋克风格头像</div>
+                    <div style="font-size: 12px; color: #999;">2024-01-19 15:45</div>
+                </div>
+                <button class="btn btn-secondary" style="padding: 8px;">
+                    <i class="fas fa-edit"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- 会员页面 -->
+        <div class="page">
+            <div class="page-title">会员中心</div>
+            <div class="vip-card">
+                <i class="fas fa-crown fa-2x"></i>
+                <div style="font-size: 20px; margin: 12px 0;">高级会员</div>
+                <div>解锁所有高级功能</div>
+            </div>
+            <div style="padding: 20px;">
+                <div style="margin-bottom: 20px;">
+                    <div style="font-weight: 600; margin-bottom: 12px;">会员特权</div>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <i class="fas fa-check-circle" style="color: #07c160;"></i>
+                            <span>高级风格模板</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <i class="fas fa-check-circle" style="color: #07c160;"></i>
+                            <span>无水印导出</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <i class="fas fa-check-circle" style="color: #07c160;"></i>
+                            <span>批量导出</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <i class="fas fa-check-circle" style="color: #07c160;"></i>
+                            <span>优先生成</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn" style="width: 100%;">
+                    <i class="fas fa-crown"></i>
+                    立即开通
+                </button>
+            </div>
+        </div>
+
+        <!-- 生成中状态 -->
+        <div class="page">
+            <div class="page-title">生成中</div>
+            <div class="loading">
+                <i class="fas fa-spinner fa-spin"></i>
+                <div>AI正在为您生成头像</div>
+                <div style="font-size: 12px; color: #999; margin-top: 8px;">预计需要10秒</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ai-avatar-backend</artifactId>
+        <groupId>com.aiavatar</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ai-avatar-core</artifactId>
+
+    <dependencies>
+        <!-- 添加对 common 模块的依赖 -->
+        <dependency>
+            <groupId>com.aiavatar</groupId>
+            <artifactId>ai-avatar-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <!-- Swagger 依赖 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <!-- Spring AMQP -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <!-- 腾讯云 SDK 核心依赖 -->
+        <dependency>
+            <groupId>com.tencentcloudapi</groupId>
+            <artifactId>tencentcloud-sdk-java</artifactId>
+            <version>3.1.715</version>
+        </dependency>
+
+        <!-- 腾讯云 AI 绘画服务 SDK -->
+        <dependency>
+            <groupId>com.tencentcloudapi</groupId>
+            <artifactId>tencentcloud-sdk-java-aiart</artifactId>
+            <version>3.1.715</version>
+        </dependency>
+
+        <!-- 腾讯云图像处理 SDK -->
+        <dependency>
+            <groupId>com.tencentcloudapi</groupId>
+            <artifactId>tencentcloud-sdk-java-ft</artifactId>
+            <version>3.1.715</version>
+        </dependency>
+
+        <!-- 腾讯云图像理解 SDK -->
+        <dependency>
+            <groupId>com.tencentcloudapi</groupId>
+            <artifactId>tencentcloud-sdk-java-tiia</artifactId>
+            <version>3.1.715</version>
+        </dependency>
+
+        <!-- 腾讯云 Cloud Image SDK -->
+        <dependency>
+            <groupId>com.tencentcloudapi</groupId>
+            <artifactId>tencentcloud-sdk-java-tci</artifactId>
+            <version>3.1.715</version>
+        </dependency>
+    </dependencies>
+</project> 
