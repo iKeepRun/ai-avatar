@@ -2,13 +2,16 @@ import { View, Image, Text } from '@tarojs/components'
 import { FC } from 'react'
 import './index.scss'
 
-interface StyleCardProps {
+export interface StyleCardProps {
   id: string
   name: string
   image: string
   isVip?: boolean
   selected?: boolean
   onClick?: () => void
+  disabled?: boolean
+  loading?: boolean
+  onSelect?: () => void
 }
 
 const StyleCard: FC<StyleCardProps> = ({

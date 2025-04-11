@@ -4,6 +4,7 @@ class AvatarStore {
   taskId: string = ''
   originalImage: string = ''
   previewImage: string = ''
+  currentStyle: string = ''
 
   constructor() {
     makeAutoObservable(this)
@@ -19,6 +20,10 @@ class AvatarStore {
 
   setPreviewImage(url: string) {
     this.previewImage = url
+  }
+
+  setCurrentStyle(style: string) {
+    this.currentStyle = style
   }
 }
 

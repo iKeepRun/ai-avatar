@@ -80,7 +80,7 @@
   background: #ccc;
 }
 .index-page .footer {
-  margin-top: 40rpx;
+  margin-top: 30rpx;
 }
 .index-page .footer .tips .tip-item {
   font-size: 24rpx;

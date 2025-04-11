@@ -2,7 +2,7 @@ export const API_BASE_URL = process.env.NODE_ENV === 'development'
   ? 'http://localhost:8080'
   : 'https://api.example.com';
 
-export const BASE_URL = API_BASE_URL;
+export const BASE_URL = 'http://localhost:8080';
 
 export const UPLOAD_URL = `${API_BASE_URL}/api/v1/upload`;
 

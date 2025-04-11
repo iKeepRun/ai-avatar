@@ -2704,12 +2704,13 @@ if (!mobx__WEBPACK_IMPORTED_MODULE_2__.observable) throw new Error("mobx-react r
 /* harmony export */   isObservableArray: function() { return /* binding */ isObservableArray; },
 /* harmony export */   isObservableMap: function() { return /* binding */ isObservableMap; },
 /* harmony export */   isObservableObject: function() { return /* binding */ isObservableObject; },
+/* harmony export */   makeAutoObservable: function() { return /* binding */ makeAutoObservable; },
 /* harmony export */   makeObservable: function() { return /* binding */ makeObservable; },
 /* harmony export */   observable: function() { return /* binding */ observable; },
 /* harmony export */   runInAction: function() { return /* binding */ runInAction; },
 /* harmony export */   untracked: function() { return /* binding */ untracked; }
 /* harmony export */ });
-/* unused harmony exports FlowCancellationError, ObservableMap, ObservableSet, _allowStateChangesInsideComputed, _autoAction, _endAction, _getAdministration, _getGlobalState, _interceptReads, _isComputingDerivation, _resetGlobalState, _startAction, action, autorun, comparer, computed, defineProperty, entries, extendObservable, flow, flowResult, get, getAtom, getDebugName, getObserverTree, has, intercept, isAction, isBoxedObservable, isComputed, isComputedProp, isFlow, isFlowCancellationError, isObservable, isObservableProp, isObservableSet, keys, makeAutoObservable, observe, onBecomeObserved, onBecomeUnobserved, onReactionError, override, ownKeys, reaction, remove, set, spy, toJS, trace, transaction, values, when */
+/* unused harmony exports FlowCancellationError, ObservableMap, ObservableSet, _allowStateChangesInsideComputed, _autoAction, _endAction, _getAdministration, _getGlobalState, _interceptReads, _isComputingDerivation, _resetGlobalState, _startAction, action, autorun, comparer, computed, defineProperty, entries, extendObservable, flow, flowResult, get, getAtom, getDebugName, getObserverTree, has, intercept, isAction, isBoxedObservable, isComputed, isComputedProp, isFlow, isFlowCancellationError, isObservable, isObservableProp, isObservableSet, keys, observe, onBecomeObserved, onBecomeUnobserved, onReactionError, override, ownKeys, reaction, remove, set, spy, toJS, trace, transaction, values, when */
 /* provided dependency */ var window = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/@tarojs/runtime/dist/runtime.esm.js")["window"];
 var niceErrors = {
   0: "Invalid value for configuration 'enforceActions', expected 'never', 'always' or 'observed'",

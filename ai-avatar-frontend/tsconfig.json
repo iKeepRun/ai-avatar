@@ -18,6 +18,7 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
     "typeRoots": [
       "node_modules/@types"
     ],

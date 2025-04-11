@@ -1,11 +1,17 @@
 import { View, Image } from '@tarojs/components'
-import { useLoad } from '@tarojs/taro'
-import { useState } from 'react'
-import { request } from '@/services/request'
-import { submitFeedback } from '@/services/api'
 import './index.scss'
 
-// 导入图片
-import feedback from '@/assets/images/feedback.png'
 
-// ... existing code ... 
+
+
+//反馈页面
+function FeedbackPage() {
+  // 页面逻辑代码
+  return (
+    <View className='feedback-page'>
+        feedback
+      </View>
+  )
+}
+
+export default FeedbackPage

@@ -55,6 +55,15 @@ export default function Index() {
       return
     }
 
+    const token = Taro.getStorageSync('token')
+    console.log("从本地缓存中获取token",token)
+    if (!token) {
+      Taro.navigateTo({
+        url: '/pages/login/index'
+      })
+      return
+    }
+
     setLoading(true)
     setError('')
 
@@ -107,9 +116,10 @@ export default function Index() {
 
       <View className='footer'>
         <View className='tips'>
+          <View className='tip-item'>照片大小不超过5MB</View>
           <View className='tip-item'>支持jpg、png格式</View>
           <View className='tip-item'>建议上传清晰的正面照片</View>
-          <View className='tip-item'>照片大小不超过5MB</View>
+          
         </View>
       </View>
     </View>

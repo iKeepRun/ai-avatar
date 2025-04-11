@@ -1,3 +1,4 @@
+import Taro from '@tarojs/taro'
 import { FC, useState } from 'react'
 import { View, ScrollView, Image, Text, Button } from '@tarojs/components'
 import { observer } from 'mobx-react'

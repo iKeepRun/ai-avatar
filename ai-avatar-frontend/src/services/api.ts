@@ -4,11 +4,15 @@ import { BASE_URL } from '../constants/config'
 
 // 用户相关接口
 export const userApi = {
-  login: (code: string) => 
+  login: (data: { code: string; avatarUrl?: string; nickName?: string }) => 
     Taro.request({
       url: `${BASE_URL}/api/v1/users/login`,
       method: 'POST',
-      data: { code }
+      data: {
+        code: data.code,
+        avatarUrl: data.avatarUrl,
+        nickName: data.nickName
+      }
     }),
 
   getProfile: () => 
@@ -99,7 +103,7 @@ export const memberApi = {
 // 上传图片
 export const uploadImage = (filePath: string) => {
   return Taro.uploadFile({
-    url: `${BASE_URL}/api/v1/upload`,
+    url: `${BASE_URL}/api/v1/avatars`,
     filePath,
     name: 'file',
     header: {

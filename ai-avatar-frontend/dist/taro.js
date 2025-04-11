@@ -88,20 +88,20 @@ Taro.pxTransform = (0,_tools_js__WEBPACK_IMPORTED_MODULE_0__.getPxTransform)(Tar
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ Chain; }
 /* harmony export */ });
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass.js */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass.js */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
 /* harmony import */ var _tarojs_shared__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @tarojs/shared */ "./node_modules/@tarojs/shared/dist/shared.esm.js");
 
 
 
 var Chain = /*#__PURE__*/function () {
   function Chain(requestParams, interceptors, index) {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Chain);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Chain);
     this.index = index || 0;
     this.requestParams = requestParams || {};
     this.interceptors = interceptors || [];
   }
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__["default"])(Chain, [{
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__["default"])(Chain, [{
     key: "proceed",
     value: function proceed() {
       var requestParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
@@ -147,19 +147,19 @@ var Chain = /*#__PURE__*/function () {
 /* harmony export */   "default": function() { return /* binding */ Link; },
 /* harmony export */   interceptorify: function() { return /* binding */ interceptorify; }
 /* harmony export */ });
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass.js */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass.js */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
 /* harmony import */ var _chain_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./chain.js */ "./node_modules/@tarojs/api/dist/interceptor/chain.js");
 
 
 
 var Link = /*#__PURE__*/function () {
   function Link(interceptor) {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Link);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Link);
     this.taroInterceptor = interceptor;
     this.chain = new _chain_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
   }
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(Link, [{
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(Link, [{
     key: "request",
     value: function request(requestParams) {
       var chain = this.chain;
@@ -260,7 +260,7 @@ function logInterceptor(chain) {
 /* harmony export */   getPreload: function() { return /* binding */ getPreload; },
 /* harmony export */   getPxTransform: function() { return /* binding */ getPxTransform; }
 /* harmony export */ });
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty.js */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty.js */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
 /* harmony import */ var _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/shared */ "./node_modules/@tarojs/shared/dist/shared.esm.js");
 
 
@@ -269,7 +269,7 @@ function Behavior(options) {
 }
 function getPreload(current) {
   return function (key, val) {
-    current.preloadData = (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isObject)(key) ? key : (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])({}, key, val);
+    current.preloadData = (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isObject)(key) ? key : (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])({}, key, val);
   };
 }
 var defaultDesignWidth = 750;
@@ -347,13 +347,13 @@ function getPxTransform(taro) {
 /* harmony export */   createReactApp: function() { return /* binding */ createReactApp; }
 /* harmony export */ });
 /* unused harmony exports connectReactPage, createH5NativeComponentConfig, createNativeComponentConfig, createNativePageConfig, setReconciler, useAddToFavorites, useDidHide, useDidShow, useError, useLaunch, useLoad, useOptionMenuClick, usePageNotFound, usePageScroll, usePullDownRefresh, usePullIntercept, useReachBottom, useReady, useResize, useRouter, useSaveExitState, useScope, useShareAppMessage, useShareTimeline, useTabItemTap, useTitleClick, useUnhandledRejection, useUnload */
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty.js */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass.js */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/callSuper.js */ "./node_modules/@babel/runtime/helpers/esm/callSuper.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits.js */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty.js */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass.js */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/callSuper.js */ "./node_modules/@babel/runtime/helpers/esm/callSuper.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits.js */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
 /* harmony import */ var _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/shared */ "./node_modules/@tarojs/shared/dist/shared.esm.js");
 /* harmony import */ var _tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/@tarojs/runtime/dist/runtime.esm.js");
 
@@ -426,7 +426,7 @@ var createTaroHook = function createTaroHook(lifecycle) {
       if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(inst[lifecycle])) {
         inst[lifecycle] = [inst[lifecycle], callback];
       } else {
-        inst[lifecycle] = [].concat((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_2__["default"])(inst[lifecycle] || []), [callback]);
+        inst[lifecycle] = [].concat((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_2__["default"])(inst[lifecycle] || []), [callback]);
       }
       if (first) {
         (0,_tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.injectPageInstance)(inst, id);
@@ -560,15 +560,15 @@ function connectReactPage(R, id) {
     return /*#__PURE__*/function (_R$Component) {
       function PageWrapper() {
         var _this;
-        (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_3__["default"])(this, PageWrapper);
-        _this = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, PageWrapper, arguments);
+        (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_3__["default"])(this, PageWrapper);
+        _this = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, PageWrapper, arguments);
         _this.state = {
           hasError: false
         };
         return _this;
       }
-      (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(PageWrapper, _R$Component);
-      return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_6__["default"])(PageWrapper, [{
+      (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(PageWrapper, _R$Component);
+      return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_6__["default"])(PageWrapper, [{
         key: "componentDidCatch",
         value:
         // React 16 uncaught error 会导致整个应用 crash，
@@ -662,8 +662,8 @@ function createReactApp(App, react, dom, config) {
   var AppWrapper = /*#__PURE__*/function (_react$Component) {
     function AppWrapper(props) {
       var _this2;
-      (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_3__["default"])(this, AppWrapper);
-      _this2 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, AppWrapper, [props]);
+      (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_3__["default"])(this, AppWrapper);
+      _this2 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, AppWrapper, [props]);
       // run createElement() inside the render function to make sure that owner is right
       _this2.pages = [];
       _this2.elements = [];
@@ -671,8 +671,8 @@ function createReactApp(App, react, dom, config) {
       appWrapperResolver(_this2);
       return _this2;
     }
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(AppWrapper, _react$Component);
-    return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_6__["default"])(AppWrapper, [{
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(AppWrapper, _react$Component);
+    return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_6__["default"])(AppWrapper, [{
       key: "mount",
       value: function mount(pageComponent, id, cb) {
         var pageWrapper = connectReactPage(react, id)(pageComponent);
@@ -718,7 +718,7 @@ function createReactApp(App, react, dom, config) {
   if (true) {
     renderReactRoot();
   }
-  var _hooks$call$app = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_7__["default"])(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getMiniLifecycleImpl').app, 3),
+  var _hooks$call$app = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_7__["default"])(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getMiniLifecycleImpl').app, 3),
     ONLAUNCH = _hooks$call$app[0],
     ONSHOW = _hooks$call$app[1],
     ONHIDE = _hooks$call$app[2];
@@ -744,7 +744,7 @@ function createReactApp(App, react, dom, config) {
         });
       }
     }
-  }, (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])({
+  }, (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])({
     config: setDefaultDescriptor({
       configurable: true,
       value: config
@@ -882,14 +882,14 @@ function initNativeComponentEntry(params) {
   var NativeComponentWrapper = /*#__PURE__*/function (_R$Component2) {
     function NativeComponentWrapper() {
       var _this4;
-      (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_3__["default"])(this, NativeComponentWrapper);
-      _this4 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, NativeComponentWrapper, arguments);
+      (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_3__["default"])(this, NativeComponentWrapper);
+      _this4 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, NativeComponentWrapper, arguments);
       _this4.root = R.createRef();
       _this4.ctx = _this4.props.getCtx();
       return _this4;
     }
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(NativeComponentWrapper, _R$Component2);
-    return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_6__["default"])(NativeComponentWrapper, [{
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(NativeComponentWrapper, _R$Component2);
+    return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_6__["default"])(NativeComponentWrapper, [{
       key: "componentDidMount",
       value: function componentDidMount() {
         this.ctx.component = this;
@@ -910,15 +910,15 @@ function initNativeComponentEntry(params) {
   var Entry = /*#__PURE__*/function (_R$Component3) {
     function Entry() {
       var _this5;
-      (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Entry);
-      _this5 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Entry, arguments);
+      (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Entry);
+      _this5 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Entry, arguments);
       _this5.state = {
         components: []
       };
       return _this5;
     }
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(Entry, _R$Component3);
-    return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_6__["default"])(Entry, [{
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(Entry, _R$Component3);
+    return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_6__["default"])(Entry, [{
       key: "componentDidMount",
       value: function componentDidMount() {
         if (isDefaultEntryDom) {
@@ -960,7 +960,7 @@ function initNativeComponentEntry(params) {
           })
         };
         this.setState({
-          components: [].concat((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_2__["default"])(this.state.components), [item])
+          components: [].concat((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_2__["default"])(this.state.components), [item])
         }, function () {
           return cb && cb();
         });
@@ -972,7 +972,7 @@ function initNativeComponentEntry(params) {
         var index = components.findIndex(function (item) {
           return item.compId === compId;
         });
-        var next = [].concat((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_2__["default"])(components.slice(0, index)), (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_2__["default"])(components.slice(index + 1)));
+        var next = [].concat((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_2__["default"])(components.slice(0, index)), (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_2__["default"])(components.slice(index + 1)));
         this.setState({
           components: next
         }, function () {
@@ -1007,7 +1007,7 @@ function createNativePageConfig(Component, pageName, data, react, reactdom, page
   h = react.createElement;
   ReactDOM = reactdom;
   setReconciler(ReactDOM);
-  var _hooks$call$page = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_7__["default"])(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getMiniLifecycleImpl').page, 7),
+  var _hooks$call$page = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_7__["default"])(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getMiniLifecycleImpl').page, 7),
     ONLOAD = _hooks$call$page[0],
     ONUNLOAD = _hooks$call$page[1],
     ONREADY = _hooks$call$page[2],
@@ -1035,7 +1035,7 @@ function createNativePageConfig(Component, pageName, data, react, reactdom, page
       _tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.Current.router.exitState = page.exitState;
     }
   }
-  var pageObj = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])({
+  var pageObj = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_8__["default"])({
     options: pageConfig
   }, ONLOAD, function () {
     var _this6 = this;
@@ -1435,7 +1435,7 @@ var NestedScrollBody = 'nested-scroll-body';
 /***/ (function(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty.js */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty.js */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
 /* harmony import */ var _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/shared */ "./node_modules/@tarojs/shared/dist/shared.esm.js");
 
 
@@ -1964,8 +1964,8 @@ var hostConfig = {
       var pages = getCurrentPages();
       var page = pages[pages.length - 1];
       data["nn" /* Shortcuts.NodeName */] = element.dataName;
-      page.setData((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])({}, (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.toCamelCase)(data.nn), data));
-      return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])({
+      page.setData((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])({}, (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.toCamelCase)(data.nn), data));
+      return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])({
         sid: element.sid
       }, "v" /* Shortcuts.Text */, ''), "nn" /* Shortcuts.NodeName */, ((_a = componentsAlias['#text']) === null || _a === void 0 ? void 0 : _a._num) || '8');
     }
@@ -1988,11 +1988,11 @@ var hostConfig = {
 /* harmony export */   unstable_batchedUpdates: function() { return /* binding */ unstable_batchedUpdates; }
 /* harmony export */ });
 /* unused harmony exports createPortal, createRoot, findDOMNode, render, unmountComponentAtNode */
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass.js */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty.js */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/typeof.js */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass.js */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty.js */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/typeof.js */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
 /* harmony import */ var _tarojs_shared__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/@tarojs/shared/dist/shared.esm.js");
 /* harmony import */ var _tarojs_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/@tarojs/runtime/dist/runtime.esm.js");
 /* harmony import */ var react_reconciler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-reconciler */ "./node_modules/react-reconciler/cjs/react-reconciler.production.min.js");
@@ -2153,7 +2153,7 @@ function updateNamedCousins(rootNode, props) {
   }
 }
 function getToStringValue(value) {
-  var isEmptyType = typeof value === 'function' || (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__["default"])(value) === 'symbol';
+  var isEmptyType = typeof value === 'function' || (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__["default"])(value) === 'symbol';
   return isEmptyType ? '' : value;
 }
 function toString(value) {
@@ -2421,11 +2421,11 @@ var hostConfig = {
     var newProps = props;
     if (dom instanceof _tarojs_runtime__WEBPACK_IMPORTED_MODULE_3__.FormElement) {
       var _ref = ['switch', 'checkbox', 'radio'].includes(type) ? ['checked', 'defaultChecked'] : ['value', 'defaultValue'],
-        _ref2 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_5__["default"])(_ref, 2),
+        _ref2 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_5__["default"])(_ref, 2),
         defaultName = _ref2[0],
         defaultKey = _ref2[1];
       if (props.hasOwnProperty(defaultKey)) {
-        newProps = Object.assign(Object.assign({}, newProps), (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_6__["default"])({}, defaultName, props[defaultKey]));
+        newProps = Object.assign(Object.assign({}, newProps), (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_6__["default"])({}, defaultName, props[defaultKey]));
         delete newProps[defaultKey];
       }
     }
@@ -2618,11 +2618,11 @@ function restoreStateOfTarget(item) {
 var ContainerMap = new WeakMap();
 var Root = /*#__PURE__*/function () {
   function Root(renderer, domContainer, options) {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_7__["default"])(this, Root);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_7__["default"])(this, Root);
     this.renderer = renderer;
     this.initInternalRoot(renderer, domContainer, options);
   }
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_8__["default"])(Root, [{
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_8__["default"])(Root, [{
     key: "initInternalRoot",
     value: function initInternalRoot(renderer, domContainer, options) {
       // Since react-reconciler v0.27, createContainer need more parameters
@@ -2900,18 +2900,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   stripTrailing: function() { return /* binding */ stripTrailing; },
 /* harmony export */   window: function() { return /* binding */ window$1; }
 /* harmony export */ });
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/typeof.js */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/superPropGet.js */ "./node_modules/@babel/runtime/helpers/esm/superPropGet.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropSet_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/superPropSet.js */ "./node_modules/@babel/runtime/helpers/esm/superPropSet.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toArray_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/toArray.js */ "./node_modules/@babel/runtime/helpers/esm/toArray.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty.js */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/callSuper.js */ "./node_modules/@babel/runtime/helpers/esm/callSuper.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits.js */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_wrapNativeSuper_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/wrapNativeSuper.js */ "./node_modules/@babel/runtime/helpers/esm/wrapNativeSuper.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass.js */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/typeof.js */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/superPropGet.js */ "./node_modules/@babel/runtime/helpers/esm/superPropGet.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropSet_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/superPropSet.js */ "./node_modules/@babel/runtime/helpers/esm/superPropSet.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toArray_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/toArray.js */ "./node_modules/@babel/runtime/helpers/esm/toArray.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty.js */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/callSuper.js */ "./node_modules/@babel/runtime/helpers/esm/callSuper.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits.js */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_wrapNativeSuper_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/wrapNativeSuper.js */ "./node_modules/@babel/runtime/helpers/esm/wrapNativeSuper.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass.js */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
 /* harmony import */ var _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/shared */ "./node_modules/@tarojs/shared/dist/shared.esm.js");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.mjs");
 /* provided dependency */ var requestAnimationFrame = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/@tarojs/runtime/dist/runtime.esm.js")["requestAnimationFrame"];
@@ -3005,7 +3005,7 @@ var observers = [];
  */
 var MutationObserverImpl = /*#__PURE__*/function () {
   function MutationObserverImpl(callback) {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, MutationObserverImpl);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, MutationObserverImpl);
     this.records = [];
     this.callback = callback;
   }
@@ -3017,7 +3017,7 @@ var MutationObserverImpl = /*#__PURE__*/function () {
    *
    * Options matching is to be implemented.
    */
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(MutationObserverImpl, [{
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(MutationObserverImpl, [{
     key: "observe",
     value: function observe(target, options) {
       this.disconnect();
@@ -3108,7 +3108,7 @@ function recordMutation(record) {
 }
 var MutationObserver$1 = /*#__PURE__*/function () {
   function MutationObserver(callback) {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, MutationObserver);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, MutationObserver);
     if (false) {} else {
       if (true) {
         console.warn('[Taro Warning] 若要使用 MutationObserver，请在 Taro 编译配置中设置 \'mini.runtime.enableMutationObserver: true\'');
@@ -3120,7 +3120,7 @@ var MutationObserver$1 = /*#__PURE__*/function () {
       };
     }
   }
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(MutationObserver, [{
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(MutationObserver, [{
     key: "observe",
     value: function observe() {
       var _this$core;
@@ -3182,7 +3182,7 @@ var incrementId = function incrementId() {
     var target = list.map(function (item) {
       return chatCodes[item];
     });
-    var res = String.fromCharCode.apply(String, (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__["default"])(target));
+    var res = String.fromCharCode.apply(String, (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__["default"])(target));
     var tailIdx = list.length - 1;
     list[tailIdx]++;
     while (list[tailIdx] > chatCodesLen) {
@@ -3262,14 +3262,14 @@ function getComponentsAlias() {
 var ClassList = /*#__PURE__*/function () {
   function ClassList(className, el) {
     var _this = this;
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, ClassList);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, ClassList);
     this.tokenList = [];
     this.el = el;
     className.trim().split(/\s+/).forEach(function (token) {
       return _this.tokenList.push(token);
     });
   }
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(ClassList, [{
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(ClassList, [{
     key: "value",
     get: function get() {
       return this.toString();
@@ -3372,11 +3372,11 @@ var ClassList = /*#__PURE__*/function () {
 }();
 var EventSource = /*#__PURE__*/function (_Map) {
   function EventSource() {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, EventSource);
-    return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, EventSource, arguments);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, EventSource);
+    return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, EventSource, arguments);
   }
-  (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(EventSource, _Map);
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(EventSource, [{
+  (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(EventSource, _Map);
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(EventSource, [{
     key: "removeNode",
     value: function removeNode(child) {
       var sid = child.sid,
@@ -3395,7 +3395,7 @@ var EventSource = /*#__PURE__*/function (_Map) {
       });
     }
   }]);
-}(/*#__PURE__*/(0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_wrapNativeSuper_js__WEBPACK_IMPORTED_MODULE_6__["default"])(Map));
+}(/*#__PURE__*/(0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_wrapNativeSuper_js__WEBPACK_IMPORTED_MODULE_6__["default"])(Map));
 var eventSource = new EventSource();
 var env = {
   window:  false ? 0 : _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.EMPTY_OBJ,
@@ -3418,11 +3418,11 @@ function hydrate(node) {
   var nodeName = node.nodeName;
   var compileModeName = null;
   if (isText(node)) {
-    return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])({
+    return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])({
       sid: node.sid
     }, "v" /* Shortcuts.Text */, node.nodeValue), "nn" /* Shortcuts.NodeName */, ((_a = componentsAlias[nodeName]) === null || _a === void 0 ? void 0 : _a._num) || '8');
   }
-  var data = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])({}, "nn" /* Shortcuts.NodeName */, nodeName), "sid", node.sid);
+  var data = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])({}, "nn" /* Shortcuts.NodeName */, nodeName), "sid", node.sid);
   if (node.uid !== node.sid) {
     data.uid = node.uid;
   }
@@ -3478,10 +3478,10 @@ function hydrate(node) {
 }
 var TaroEventTarget = /*#__PURE__*/function () {
   function TaroEventTarget() {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroEventTarget);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroEventTarget);
     this.__handlers = {};
   }
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroEventTarget, [{
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroEventTarget, [{
     key: "addEventListener",
     value: function addEventListener(type, handler, options) {
       type = type.toLowerCase();
@@ -3564,8 +3564,8 @@ var nodeId = incrementId();
 var TaroNode = /*#__PURE__*/function (_TaroEventTarget) {
   function TaroNode() {
     var _this3;
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroNode);
-    _this3 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, TaroNode);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroNode);
+    _this3 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, TaroNode);
     _this3.parentNode = null;
     _this3.childNodes = [];
     _this3.hydrate = function (node) {
@@ -3578,8 +3578,8 @@ var TaroNode = /*#__PURE__*/function (_TaroEventTarget) {
     eventSource.set(_this3.sid, _this3);
     return _this3;
   }
-  (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroNode, _TaroEventTarget);
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroNode, [{
+  (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroNode, _TaroEventTarget);
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroNode, [{
     key: "updateChildNodes",
     value: function updateChildNodes(isClean) {
       var _this4 = this;
@@ -4091,12 +4091,12 @@ function isCssVariable(propertyName) {
 }
 var Style = /*#__PURE__*/function () {
   function Style(element) {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Style);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Style);
     this._element = element;
     this._usedStyleProp = new Set();
     this._value = {};
   }
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(Style, [{
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(Style, [{
     key: "setCssVariables",
     value: function setCssVariables(styleKey) {
       var _this7 = this;
@@ -4148,7 +4148,7 @@ var Style = /*#__PURE__*/function () {
         }
         // 可能存在 'background: url(http:x/y/z)' 的情况
         var _rule$split = rule.split(':'),
-          _rule$split2 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toArray_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_rule$split),
+          _rule$split2 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toArray_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_rule$split),
           propName = _rule$split2[0],
           valList = _rule$split2.slice(1);
         var val = valList.join(':');
@@ -4245,8 +4245,8 @@ function following(el, root) {
 var TaroElement = /*#__PURE__*/function (_TaroNode) {
   function TaroElement() {
     var _this10;
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroElement);
-    _this10 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, TaroElement);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroElement);
+    _this10 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, TaroElement);
     _this10.props = {};
     _this10.dataset = _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.EMPTY_OBJ;
     _this10.nodeType = 1 /* NodeType.ELEMENT_NODE */;
@@ -4254,8 +4254,8 @@ var TaroElement = /*#__PURE__*/function (_TaroNode) {
     _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('patchElement', _this10);
     return _this10;
   }
-  (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroElement, _TaroNode);
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroElement, [{
+  (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroElement, _TaroNode);
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroElement, [{
     key: "_stopPropagation",
     value: function _stopPropagation(event) {
       // eslint-disable-next-line @typescript-eslint/no-this-alias
@@ -4331,7 +4331,7 @@ var TaroElement = /*#__PURE__*/function (_TaroNode) {
       return text;
     },
     set: function set(text) {
-      (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropSet_js__WEBPACK_IMPORTED_MODULE_9__["default"])(TaroElement, "textContent", text, this, 1, 1);
+      (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropSet_js__WEBPACK_IMPORTED_MODULE_9__["default"])(TaroElement, "textContent", text, this, 1, 1);
     }
   }, {
     key: "hasAttribute",
@@ -4575,13 +4575,13 @@ var TaroElement = /*#__PURE__*/function (_TaroNode) {
           value: alias
         });
       }
-      (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_10__["default"])(TaroElement, "addEventListener", this, 3)([type, handler, options]);
+      (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_10__["default"])(TaroElement, "addEventListener", this, 3)([type, handler, options]);
     }
   }, {
     key: "removeEventListener",
     value: function removeEventListener(type, handler) {
       var sideEffect = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
-      (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_10__["default"])(TaroElement, "removeEventListener", this, 3)([type, handler]);
+      (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_10__["default"])(TaroElement, "removeEventListener", this, 3)([type, handler]);
       var name = this.nodeName;
       var SPECIAL_NODES = _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getSpecialNodes');
       _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('modifyRemoveEventListener', this, sideEffect, getComponentsAlias);
@@ -4688,12 +4688,12 @@ function isWordEnd(cursor, wordBegin, html) {
 }
 var Scaner = /*#__PURE__*/function () {
   function Scaner(html) {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Scaner);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Scaner);
     this.tokens = [];
     this.position = initPosition();
     this.html = html;
   }
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(Scaner, [{
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(Scaner, [{
     key: "scan",
     value: function scan() {
       var html = this.html,
@@ -4979,10 +4979,10 @@ var GENERAL_SIBLING_COMBINATOR = '~';
 var ADJACENT_SIBLING_COMBINATOR = '+';
 var StyleTagParser = /*#__PURE__*/function () {
   function StyleTagParser() {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, StyleTagParser);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, StyleTagParser);
     this.styles = [];
   }
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(StyleTagParser, [{
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(StyleTagParser, [{
     key: "extractStyle",
     value: function extractStyle(src) {
       var _this12 = this;
@@ -5048,7 +5048,7 @@ var StyleTagParser = /*#__PURE__*/function () {
         // 属性选择器
         item = item.replace(/\[(.+?)\]/g, function (_, $1) {
           var _$1$split = $1.split('='),
-            _$1$split2 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_11__["default"])(_$1$split, 2),
+            _$1$split2 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_11__["default"])(_$1$split, 2),
             key = _$1$split2[0],
             value = _$1$split2[1];
           var all = $1.indexOf('=') === -1;
@@ -5290,7 +5290,7 @@ function attributesArray2Props(attributes) {
   for (var i = 0; i < attributes.length; i++) {
     var attr = attributes[i];
     var _splitEqual = splitEqual(attr),
-      _splitEqual2 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_11__["default"])(_splitEqual, 2),
+      _splitEqual2 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_11__["default"])(_splitEqual, 2),
       key = _splitEqual2[0],
       value = _splitEqual2[1];
     props[key] = value == null ? true : unquote(value);
@@ -5353,7 +5353,7 @@ function format(children, document, styleOptions, parent) {
       for (var i = 0; i < child.attributes.length; i++) {
         var attr = child.attributes[i];
         var _splitEqual3 = splitEqual(attr),
-          _splitEqual4 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_11__["default"])(_splitEqual3, 2),
+          _splitEqual4 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_11__["default"])(_splitEqual3, 2),
           key = _splitEqual4[0],
           value = _splitEqual4[1];
         if (key === 'width' || key === 'height') {
@@ -5378,7 +5378,7 @@ function format(children, document, styleOptions, parent) {
     for (var _i4 = 0; _i4 < child.attributes.length; _i4++) {
       var _attr = child.attributes[_i4];
       var _splitEqual5 = splitEqual(_attr),
-        _splitEqual6 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_11__["default"])(_splitEqual5, 2),
+        _splitEqual6 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_11__["default"])(_splitEqual5, 2),
         _key2 = _splitEqual6[0],
         _value = _splitEqual6[1];
       if (_key2 === 'class') {
@@ -5596,7 +5596,7 @@ function cloneNode() {
   for (var key in this) {
     var value = this[key];
     // eslint-disable-next-line valid-typeof
-    if ([PROPS, DATASET].includes(key) && (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_12__["default"])(value) === OBJECT) {
+    if ([PROPS, DATASET].includes(key) && (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_12__["default"])(value) === OBJECT) {
       newNode[key] = Object.assign({}, value);
     } else if (key === '_value') {
       newNode[key] = value;
@@ -5644,7 +5644,7 @@ if (true) {
 // Taro 事件对象。以 Web 标准的事件对象为基础，加入小程序事件对象中携带的部分信息，并模拟实现事件冒泡。
 var TaroEvent = /*#__PURE__*/function () {
   function TaroEvent(type, opts, event) {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroEvent);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroEvent);
     this._stop = false;
     this._end = false;
     this.defaultPrevented = false;
@@ -5658,7 +5658,7 @@ var TaroEvent = /*#__PURE__*/function () {
     this.bubbles = Boolean(opts && opts.bubbles);
     this.cancelable = Boolean(opts && opts.cancelable);
   }
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroEvent, [{
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroEvent, [{
     key: "stopPropagation",
     value: function stopPropagation() {
       this._stop = true;
@@ -5800,11 +5800,11 @@ function eventHandler(event) {
 }
 var FormElement = /*#__PURE__*/function (_TaroElement) {
   function FormElement() {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, FormElement);
-    return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, FormElement, arguments);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, FormElement);
+    return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, FormElement, arguments);
   }
-  (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(FormElement, _TaroElement);
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(FormElement, [{
+  (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(FormElement, _TaroElement);
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(FormElement, [{
     key: "type",
     get: function get() {
       var _a;
@@ -5837,16 +5837,16 @@ var FormElement = /*#__PURE__*/function (_TaroElement) {
           this.value = val;
         }
       }
-      return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_10__["default"])(FormElement, "dispatchEvent", this, 3)([event]);
+      return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_10__["default"])(FormElement, "dispatchEvent", this, 3)([event]);
     }
   }]);
 }(TaroElement);
 var Performance = /*#__PURE__*/function () {
   function Performance() {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Performance);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Performance);
     this.recorder = new Map();
   }
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(Performance, [{
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(Performance, [{
     key: "start",
     value: function start(id) {
       if (!options.debug) {
@@ -5907,8 +5907,8 @@ function findCustomWrapper(root, dataPathArr) {
 var TaroRootElement = /*#__PURE__*/function (_TaroElement2) {
   function TaroRootElement() {
     var _this16;
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroRootElement);
-    _this16 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, TaroRootElement);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroRootElement);
+    _this16 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, TaroRootElement);
     _this16.updatePayloads = [];
     _this16.updateCallbacks = [];
     _this16.pendingUpdate = false;
@@ -5917,8 +5917,8 @@ var TaroRootElement = /*#__PURE__*/function (_TaroElement2) {
     _this16.tagName = ROOT_STR.toUpperCase();
     return _this16;
   }
-  (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroRootElement, _TaroElement2);
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroRootElement, [{
+  (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroRootElement, _TaroElement2);
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroRootElement, [{
     key: "_path",
     get: function get() {
       return ROOT_STR;
@@ -5992,7 +5992,7 @@ var TaroRootElement = /*#__PURE__*/function (_TaroElement2) {
               var customWrapper = found.customWrapper,
                 splitedPath = found.splitedPath;
               // 合并同一个 customWrapper 的相关更新到一次 setData 中
-              customWrapperMap.set(customWrapper, Object.assign(Object.assign({}, customWrapperMap.get(customWrapper) || {}), (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])({}, "i.".concat(splitedPath), data[p])));
+              customWrapperMap.set(customWrapper, Object.assign(Object.assign({}, customWrapperMap.get(customWrapper) || {}), (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])({}, "i.".concat(splitedPath), data[p])));
             } else {
               // 此项数据使用页面去更新
               normalUpdate[p] = data[p];
@@ -6053,15 +6053,15 @@ var TaroRootElement = /*#__PURE__*/function (_TaroElement2) {
 var TaroText = /*#__PURE__*/function (_TaroNode2) {
   function TaroText(value) {
     var _this18;
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroText);
-    _this18 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, TaroText);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroText);
+    _this18 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, TaroText);
     _this18.nodeType = 3 /* NodeType.TEXT_NODE */;
     _this18.nodeName = '#text';
     _this18._value = value;
     return _this18;
   }
-  (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroText, _TaroNode2);
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroText, [{
+  (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroText, _TaroNode2);
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroText, [{
     key: "textContent",
     get: function get() {
       return this._value;
@@ -6126,7 +6126,7 @@ function encode(str) {
 }
 var URLSearchParams =  false ? 0 : (_a = /*#__PURE__*/function () {
   function _a(query) {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, _a);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, _a);
     _dict.set(this, Object.create(null));
     query !== null && query !== void 0 ? query : query = '';
     var dict = (0,tslib__WEBPACK_IMPORTED_MODULE_13__.__classPrivateFieldGet)(this, _dict, "f");
@@ -6165,7 +6165,7 @@ var URLSearchParams =  false ? 0 : (_a = /*#__PURE__*/function () {
       }
     }
   }
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_a, [{
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_a, [{
     key: "append",
     value: function append(name, value) {
       appendTo((0,tslib__WEBPACK_IMPORTED_MODULE_13__.__classPrivateFieldGet)(this, _dict, "f"), name, value);
@@ -6235,7 +6235,7 @@ var URLSearchParams =  false ? 0 : (_a = /*#__PURE__*/function () {
 var _TaroURL_hash, _TaroURL_hostname, _TaroURL_pathname, _TaroURL_port, _TaroURL_protocol, _TaroURL_search;
 var TaroURL = /*#__PURE__*/function () {
   function TaroURL(url, base) {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroURL);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroURL);
     /* private property */
     _TaroURL_hash.set(this, '');
     _TaroURL_hostname.set(this, '');
@@ -6259,7 +6259,7 @@ var TaroURL = /*#__PURE__*/function () {
     (0,tslib__WEBPACK_IMPORTED_MODULE_13__.__classPrivateFieldSet)(this, _TaroURL_search, new URLSearchParams(search), "f");
   }
   /* public property */
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroURL, [{
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroURL, [{
     key: "protocol",
     get: function get() {
       return (0,tslib__WEBPACK_IMPORTED_MODULE_13__.__classPrivateFieldGet)(this, _TaroURL_protocol, "f");
@@ -6482,11 +6482,11 @@ function parseUrlBase(url, base) {
 }
 var AnchorElement = /*#__PURE__*/function (_TaroElement3) {
   function AnchorElement() {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, AnchorElement);
-    return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, AnchorElement, arguments);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, AnchorElement);
+    return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, AnchorElement, arguments);
   }
-  (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(AnchorElement, _TaroElement3);
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(AnchorElement, [{
+  (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(AnchorElement, _TaroElement3);
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(AnchorElement, [{
     key: "href",
     get: function get() {
       var _a;
@@ -6543,10 +6543,10 @@ var AnchorElement = /*#__PURE__*/function (_TaroElement3) {
       if (qualifiedName === "href" /* AnchorElementAttrs.HREF */) {
         var willSetAttr = parseUrl(value);
         for (var k in willSetAttr) {
-          (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_10__["default"])(AnchorElement, "setAttribute", this, 3)([k, willSetAttr[k]]);
+          (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_10__["default"])(AnchorElement, "setAttribute", this, 3)([k, willSetAttr[k]]);
         }
       } else {
-        (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_10__["default"])(AnchorElement, "setAttribute", this, 3)([qualifiedName, value]);
+        (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_10__["default"])(AnchorElement, "setAttribute", this, 3)([qualifiedName, value]);
       }
     }
   }]);
@@ -6554,14 +6554,14 @@ var AnchorElement = /*#__PURE__*/function (_TaroElement3) {
 var TransferElement = /*#__PURE__*/function (_TaroElement4) {
   function TransferElement(dataName) {
     var _this19;
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TransferElement);
-    _this19 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, TransferElement);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TransferElement);
+    _this19 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, TransferElement);
     _this19.dataName = dataName;
     _this19.isTransferElement = true;
     return _this19;
   }
-  (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TransferElement, _TaroElement4);
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TransferElement, [{
+  (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TransferElement, _TaroElement4);
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TransferElement, [{
     key: "_path",
     get: function get() {
       return this.dataName;
@@ -6571,15 +6571,15 @@ var TransferElement = /*#__PURE__*/function (_TaroElement4) {
 var TaroDocument = /*#__PURE__*/function (_TaroElement5) {
   function TaroDocument() {
     var _this20;
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroDocument);
-    _this20 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, TaroDocument);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroDocument);
+    _this20 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, TaroDocument);
     _this20.createEvent = createEvent;
     _this20.nodeType = 9 /* NodeType.DOCUMENT_NODE */;
     _this20.nodeName = DOCUMENT_ELEMENT_NAME;
     return _this20;
   }
-  (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroDocument, _TaroElement5);
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroDocument, [{
+  (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroDocument, _TaroElement5);
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroDocument, [{
     key: "createElement",
     value: function createElement(type) {
       var nodeName = type.toLowerCase();
@@ -6696,11 +6696,11 @@ var eventCenter = _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getEve
  */
 var RuntimeCache = /*#__PURE__*/function () {
   function RuntimeCache(name) {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, RuntimeCache);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, RuntimeCache);
     this.cache = new Map();
     this.name = name;
   }
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(RuntimeCache, [{
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(RuntimeCache, [{
     key: "has",
     value: function has(identifier) {
       return this.cache.has(identifier);
@@ -6729,8 +6729,8 @@ var cache$1 = new RuntimeCache('history');
 var TaroHistory = /*#__PURE__*/function (_Events) {
   function TaroHistory(location, options) {
     var _this21;
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroHistory);
-    _this21 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, TaroHistory);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroHistory);
+    _this21 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, TaroHistory);
     _TaroHistory_instances.add(_this21);
     /* private property */
     _TaroHistory_location.set(_this21, void 0);
@@ -6778,8 +6778,8 @@ var TaroHistory = /*#__PURE__*/function (_Events) {
     return _this21;
   }
   /* public property */
-  (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroHistory, _Events);
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroHistory, [{
+  (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroHistory, _Events);
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroHistory, [{
     key: "length",
     get: function get() {
       return (0,tslib__WEBPACK_IMPORTED_MODULE_13__.__classPrivateFieldGet)(this, _TaroHistory_stack, "f").length;
@@ -6866,8 +6866,8 @@ var cache = new RuntimeCache('location');
 var TaroLocation = /*#__PURE__*/function (_Events2) {
   function TaroLocation(options) {
     var _this22;
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroLocation);
-    _this22 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, TaroLocation);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroLocation);
+    _this22 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, TaroLocation);
     _TaroLocation_instances.add(_this22);
     /* private property */
     _TaroLocation_url.set(_this22, new URL(INIT_URL));
@@ -6908,8 +6908,8 @@ var TaroLocation = /*#__PURE__*/function (_Events2) {
     return _this22;
   }
   /* public property */
-  (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroLocation, _Events2);
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroLocation, [{
+  (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroLocation, _Events2);
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroLocation, [{
     key: "protocol",
     get: function get() {
       return (0,tslib__WEBPACK_IMPORTED_MODULE_13__.__classPrivateFieldGet)(this, _TaroLocation_url, "f").protocol;
@@ -7169,13 +7169,13 @@ var _caf = typeof cancelAnimationFrame !== 'undefined' && cancelAnimationFrame !
 var TaroWindow = /*#__PURE__*/function (_Events3) {
   function TaroWindow() {
     var _this23;
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroWindow);
-    _this23 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, TaroWindow);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroWindow);
+    _this23 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, TaroWindow);
     _this23.navigator = nav;
     _this23.requestAnimationFrame = _raf;
     _this23.cancelAnimationFrame = _caf;
     _this23.getComputedStyle = getComputedStyle;
-    var globalProperties = [].concat((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__["default"])(Object.getOwnPropertyNames(__webpack_require__.g || {})), (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__["default"])(Object.getOwnPropertySymbols(__webpack_require__.g || {})));
+    var globalProperties = [].concat((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__["default"])(Object.getOwnPropertyNames(__webpack_require__.g || {})), (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__["default"])(Object.getOwnPropertySymbols(__webpack_require__.g || {})));
     globalProperties.forEach(function (property) {
       if (property === 'atob' || property === 'document') return;
       if (!Object.prototype.hasOwnProperty.call(_this23, property)) {
@@ -7201,8 +7201,8 @@ var TaroWindow = /*#__PURE__*/function (_Events3) {
     _this23.initEvent();
     return _this23;
   }
-  (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroWindow, _Events3);
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroWindow, [{
+  (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroWindow, _Events3);
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroWindow, [{
     key: "initEvent",
     value: function initEvent() {
       var _location = this.location;
@@ -7279,11 +7279,11 @@ var history = window$1.history;
 // for Vue3
 var SVGElement = /*#__PURE__*/function (_TaroElement6) {
   function SVGElement() {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, SVGElement);
-    return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, SVGElement, arguments);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, SVGElement);
+    return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(this, SVGElement, arguments);
   }
-  (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(SVGElement, _TaroElement6);
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(SVGElement);
+  (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__["default"])(SVGElement, _TaroElement6);
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(SVGElement);
 }(TaroElement); // export const removeLeadingSlash = (str = '') => str.replace(/^\.?\//, '')
 // export const removeTrailingSearch = (str = '') => str.replace(/\?[\s\S]*$/, '')
 var addLeadingSlash = function addLeadingSlash() {
@@ -7317,7 +7317,7 @@ var getHomePage = function getHomePage() {
   var _a;
   var routePath = addLeadingSlash(stripBasename(path, basename));
   var alias = ((_a = Object.entries(customRoutes).find(function (_ref3) {
-    var _ref4 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_11__["default"])(_ref3, 1),
+    var _ref4 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_11__["default"])(_ref3, 1),
       key = _ref4[0];
     return key === routePath;
   })) === null || _a === void 0 ? void 0 : _a[1]) || routePath;
@@ -7390,7 +7390,7 @@ function getOnHideEventKey(path) {
 function createPageConfig(component, pageName, data, pageConfig) {
   // 小程序 Page 构造器是一个傲娇小公主，不能把复杂的对象挂载到参数上
   var id = pageName !== null && pageName !== void 0 ? pageName : "taro_page_".concat(pageId());
-  var _hooks$call$page = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_11__["default"])(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getMiniLifecycleImpl').page, 7),
+  var _hooks$call$page = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_11__["default"])(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getMiniLifecycleImpl').page, 7),
     ONLOAD = _hooks$call$page[0],
     ONUNLOAD = _hooks$call$page[1],
     ONREADY = _hooks$call$page[2],
@@ -7417,7 +7417,7 @@ function createPageConfig(component, pageName, data, pageConfig) {
   }
   var loadResolver;
   var hasLoaded;
-  var config = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])({}, ONLOAD, function () {
+  var config = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])({}, ONLOAD, function () {
     var _this24 = this;
     var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
     var cb = arguments.length > 1 ? arguments[1] : undefined;
@@ -7537,7 +7537,7 @@ function createPageConfig(component, pageName, data, pageConfig) {
       var _arguments = arguments,
         _this27 = this;
       var exec = function exec() {
-        return safeExecute.apply(void 0, [_this27.$taroPath, lifecycle].concat((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_arguments)));
+        return safeExecute.apply(void 0, [_this27.$taroPath, lifecycle].concat((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_arguments)));
       };
       if (isDefer) {
         hasLoaded.then(exec);
@@ -7577,10 +7577,10 @@ function createPageConfig(component, pageName, data, pageConfig) {
 function createComponentConfig(component, componentName, data) {
   var id = componentName !== null && componentName !== void 0 ? componentName : "taro_component_".concat(pageId());
   var componentElement = null;
-  var _hooks$call$component = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_11__["default"])(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getMiniLifecycleImpl').component, 2),
+  var _hooks$call$component = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_11__["default"])(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getMiniLifecycleImpl').component, 2),
     ATTACHED = _hooks$call$component[0],
     DETACHED = _hooks$call$component[1];
-  var config = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])({}, ATTACHED, function () {
+  var config = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])({}, ATTACHED, function () {
     var _this28 = this;
     var _a;
     perf.start(PAGE_INIT);
@@ -7622,10 +7622,10 @@ function createComponentConfig(component, componentName, data) {
 }
 function createRecursiveComponentConfig(componentName) {
   var isCustomWrapper = componentName === CUSTOM_WRAPPER;
-  var _hooks$call$component2 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_11__["default"])(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getMiniLifecycleImpl').component, 2),
+  var _hooks$call$component2 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_11__["default"])(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getMiniLifecycleImpl').component, 2),
     ATTACHED = _hooks$call$component2[0],
     DETACHED = _hooks$call$component2[1];
-  var lifeCycles = isCustomWrapper ? (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])({}, ATTACHED, function () {
+  var lifeCycles = isCustomWrapper ? (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])({}, ATTACHED, function () {
     var _a, _b;
     var componentId = ((_a = this.data.i) === null || _a === void 0 ? void 0 : _a.sid) || ((_b = this.props.i) === null || _b === void 0 ? void 0 : _b.sid);
     if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(componentId)) {
@@ -7650,7 +7650,7 @@ function createRecursiveComponentConfig(componentName) {
     properties: {
       i: {
         type: Object,
-        value: (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])({}, "nn" /* Shortcuts.NodeName */, (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.getComponentsAlias)(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.internalComponents)[VIEW]._num)
+        value: (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])({}, "nn" /* Shortcuts.NodeName */, (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.getComponentsAlias)(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.internalComponents)[VIEW]._num)
       },
       l: {
         type: String,
@@ -8479,13 +8479,13 @@ if (true) {
 /* harmony export */   warn: function() { return /* binding */ warn; }
 /* harmony export */ });
 /* unused harmony exports EMPTY_ARR, EventChannel, HOOK_TYPE, PLATFORM_CONFIG_MAP, PLATFORM_TYPE, Shortcuts, TaroHook, TaroHooks, animation, box, cacheDataGet, cacheDataHas, cacheDataSet, focusComponents, getPlatformType, getUniqueKey, hasOwn, indent, isBooleanStringLiteral, isWebPlatform, nestElements, nonsupport, queryToJson, setUniqueKeyToRoute, singleQuote, toKebabCase, touchEvents, unbox, voidElements */
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/callSuper.js */ "./node_modules/@babel/runtime/helpers/esm/callSuper.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/superPropGet.js */ "./node_modules/@babel/runtime/helpers/esm/superPropGet.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits.js */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/typeof.js */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass.js */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/callSuper.js */ "./node_modules/@babel/runtime/helpers/esm/callSuper.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/superPropGet.js */ "./node_modules/@babel/runtime/helpers/esm/superPropGet.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits.js */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/typeof.js */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass.js */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
 
 
 
@@ -8955,18 +8955,18 @@ var PLATFORM_CONFIG_MAP = {
 };
 var Events = /*#__PURE__*/function () {
   function Events(opts) {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Events);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Events);
     var _a;
     this.callbacks = (_a = opts === null || opts === void 0 ? void 0 : opts.callbacks) !== null && _a !== void 0 ? _a : {};
   }
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__["default"])(Events, [{
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__["default"])(Events, [{
     key: "on",
     value: function on(eventName, callback, context) {
       var event, tail, _eventName;
       if (!callback) {
         return this;
       }
-      if ((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__["default"])(eventName) === 'symbol') {
+      if ((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__["default"])(eventName) === 'symbol') {
         _eventName = [eventName];
       } else {
         _eventName = eventName.split(Events.eventSplitter);
@@ -9011,7 +9011,7 @@ var Events = /*#__PURE__*/function () {
         delete this.callbacks;
         return this;
       }
-      if ((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__["default"])(events) === 'symbol') {
+      if ((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__["default"])(events) === 'symbol') {
         _events = [events];
       } else {
         _events = events ? events.split(Events.eventSplitter) : Object.keys(calls);
@@ -9040,7 +9040,7 @@ var Events = /*#__PURE__*/function () {
       if (!(calls = this.callbacks)) {
         return this;
       }
-      if ((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__["default"])(events) === 'symbol') {
+      if ((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__["default"])(events) === 'symbol') {
         _events = [events];
       } else {
         _events = events.split(Events.eventSplitter);
@@ -9064,20 +9064,20 @@ Events.eventSplitter = ','; // Note: Harmony ACE API 8 开发板不支持使用�
 var PageEvts = /*#__PURE__*/function (_Events) {
   function PageEvts() {
     var _this2;
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, PageEvts);
-    _this2 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(this, PageEvts, arguments);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, PageEvts);
+    _this2 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(this, PageEvts, arguments);
     _this2.exeList = [];
     return _this2;
   }
-  (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(PageEvts, _Events);
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__["default"])(PageEvts, [{
+  (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(PageEvts, _Events);
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__["default"])(PageEvts, [{
     key: "on",
     value: function on(eventName, callback) {
       var _this3 = this;
-      (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_5__["default"])(PageEvts, "on", this, 3)([eventName, callback, this]);
+      (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_5__["default"])(PageEvts, "on", this, 3)([eventName, callback, this]);
       this.exeList = this.exeList.reduce(function (prev, item) {
         if (item.eventName === eventName) {
-          (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_5__["default"])(PageEvts, "trigger", _this3, 3)([item.eventName, item.data]);
+          (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_5__["default"])(PageEvts, "trigger", _this3, 3)([item.eventName, item.data]);
         } else {
           prev.push(item);
         }
@@ -9096,11 +9096,11 @@ var PageEvts = /*#__PURE__*/function (_Events) {
 var pageChannel = new PageEvts();
 var RouteEvts = /*#__PURE__*/function (_Events2) {
   function RouteEvts() {
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, RouteEvts);
-    return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(this, RouteEvts, arguments);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, RouteEvts);
+    return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(this, RouteEvts, arguments);
   }
-  (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(RouteEvts, _Events2);
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__["default"])(RouteEvts, [{
+  (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(RouteEvts, _Events2);
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__["default"])(RouteEvts, [{
     key: "emit",
     value: function emit(events, data) {
       pageChannel.off(events);
@@ -9113,7 +9113,7 @@ var RouteEvts = /*#__PURE__*/function (_Events2) {
     key: "addEvents",
     value: function addEvents(events) {
       var _this4 = this;
-      if (!events || (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__["default"])(events) !== 'object') return;
+      if (!events || (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__["default"])(events) !== 'object') return;
       Object.keys(events).forEach(function (key) {
         _this4.off(key);
         _this4.on(key, events[key], _this4);
@@ -9136,7 +9136,7 @@ function isNull(o) {
   return o === null;
 }
 function isObject(o) {
-  return o !== null && (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__["default"])(o) === 'object';
+  return o !== null && (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__["default"])(o) === 'object';
 }
 function isBoolean(o) {
   return o === true || o === false;
@@ -9174,8 +9174,8 @@ function TaroHook(type, initial) {
 var TaroHooks = /*#__PURE__*/function (_Events3) {
   function TaroHooks(hooks, opts) {
     var _this5;
-    (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, TaroHooks);
-    _this5 = (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(this, TaroHooks, [opts]);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, TaroHooks);
+    _this5 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(this, TaroHooks, [opts]);
     _this5.hooks = hooks;
     for (var hookName in hooks) {
       var initial = hooks[hookName].initial;
@@ -9185,8 +9185,8 @@ var TaroHooks = /*#__PURE__*/function (_Events3) {
     }
     return _this5;
   }
-  (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(TaroHooks, _Events3);
-  return (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__["default"])(TaroHooks, [{
+  (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(TaroHooks, _Events3);
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__["default"])(TaroHooks, [{
     key: "tapOneOrMany",
     value: function tapOneOrMany(hookName, callback) {
       var _this6 = this;
@@ -9575,7 +9575,7 @@ function getNormalRequest(global) {
 function processApis(taro, global) {
   var config = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
   var patchNeedPromiseApis = config.needPromiseApis || [];
-  var _needPromiseApis = new Set([].concat((0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_6__["default"])(patchNeedPromiseApis), (0,D_code_ai_avatar_ai_avatar_mini_program_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_6__["default"])(needPromiseApis)));
+  var _needPromiseApis = new Set([].concat((0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_6__["default"])(patchNeedPromiseApis), (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_6__["default"])(needPromiseApis)));
   var preserved = ['getEnv', 'interceptors', 'Current', 'getCurrentInstance', 'options', 'nextTick', 'eventCenter', 'Events', 'preload', 'webpackJsonp'];
   var apis = new Set(!config.isOnlyPromisify ? Object.keys(global).filter(function (api) {
     return preserved.indexOf(api) === -1;
