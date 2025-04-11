@@ -25,6 +25,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
+
 <!--        <dependency>-->
 <!--            <groupId>com.aiavatar</groupId>-->
 <!--            <artifactId>ai-avatar-common</artifactId>-->

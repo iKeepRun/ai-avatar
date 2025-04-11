@@ -14,3 +14,11 @@ spring:
     username: guest
     password: guest
     virtual-host: /
+
+tx:
+  cos:
+    secret-id: AKIDSn1FORM4bu0wfBUd4KOFsIUTF0Yw62lJ
+    secret-key: PfiYAbqrfFC9tPkslRuAC1c0c1IMEvTo
+    region: ap-shanghai
+
+

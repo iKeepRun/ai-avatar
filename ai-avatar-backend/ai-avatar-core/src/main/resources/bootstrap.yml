@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ai-avatar-core
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+        namespace: ai-avatar
+        shared-configs:
+          - data-id: common-redis.yaml
+            refresh: true
+            group: DEFAULT_GROUP

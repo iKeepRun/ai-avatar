@@ -4,17 +4,31 @@ server:
 spring:
   application:
     name: ai-avatar-gateway
+  profiles:
+    include: redis
+  redis:
+    host: localhost
+    port: 6379
+    password:  # 如果有密码，请设置
+    database: 0
+    timeout: 10000
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
   cloud:
     gateway:
       routes:
         - id: user-service
           uri: http://localhost:8082
           predicates:
-            - Path=/**
+            - Path=/api/v1/users/**
         - id: core-service
           uri: http://localhost:8081
           predicates:
-            - Path=/**
+            - Path=/api/v1/avatars/**,/api/v1/history/**,/api/v1/share/**
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -59,3 +73,4 @@ wx:
     mchKey: your-mch-key
     keyPath: classpath:cert/apiclient_cert.p12
     notifyUrl: https://your-domain.com/api/v1/payment/notify 
+
