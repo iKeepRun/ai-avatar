@@ -2,7 +2,7 @@
   "miniprogramRoot": "./",
   "projectname": "ai-avatar-frontend",
   "description": "AI头像生成小程序",
-  "appid": "wx9fa0721623bdaa69",
+  "appid": "wxa738fb7ee7af0358",
   "setting": {
     "urlCheck": true,
     "es6": true,

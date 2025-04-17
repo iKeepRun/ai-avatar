@@ -17,10 +17,8 @@ export interface MemberInfo {
 }
 
 export interface AvatarResponse {
-  taskId: string;
-  status: number;
-  resultUrl?: string;
-  errorMessage?: string;
-  createTime: string;
-  updateTime: string;
+  code: number;
+  success:boolean;
+  message?: string;
+  data: any;
 } 

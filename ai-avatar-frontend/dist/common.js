@@ -1,103 +1,5 @@
+"use strict";
 (wx["webpackJsonp"] = wx["webpackJsonp"] || []).push([["common"],{
-
-/***/ "./src/components/ColorPicker/index.tsx":
-/*!**********************************************!*\
-  !*** ./src/components/ColorPicker/index.tsx ***!
-  \**********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/plugin-platform-weapp/dist/components-react.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/cjs/react-jsx-runtime.production.min.js");
-
-
-
-var ColorPicker = function ColorPicker(_ref) {
-  var color = _ref.color,
-    onChange = _ref.onChange;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__.View, {
-    className: "color-picker",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__.View, {
-      className: "color-preview",
-      style: {
-        backgroundColor: color
-      },
-      onClick: function onClick() {
-        // 这里应该打开颜色选择器，但微信小程序没有原生的颜色选择器
-        // 可以考虑使用第三方组件或自定义实现
-        onChange('#000000');
-      }
-    })
-  });
-};
-/* harmony default export */ __webpack_exports__["default"] = (ColorPicker);
-
-/***/ }),
-
-/***/ "./src/components/StyleCard/index.tsx":
-/*!********************************************!*\
-  !*** ./src/components/StyleCard/index.tsx ***!
-  \********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/plugin-platform-weapp/dist/components-react.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/cjs/react-jsx-runtime.production.min.js");
-
-
-
-var StyleCard = function StyleCard(_ref) {
-  var id = _ref.id,
-    name = _ref.name,
-    image = _ref.image,
-    _ref$isVip = _ref.isVip,
-    isVip = _ref$isVip === void 0 ? false : _ref$isVip,
-    _ref$selected = _ref.selected,
-    selected = _ref$selected === void 0 ? false : _ref$selected,
-    onClick = _ref.onClick;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__.View, {
-    className: "style-card ".concat(selected ? 'selected' : ''),
-    onClick: onClick,
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__.Image, {
-      className: "style-image",
-      src: image,
-      mode: "aspectFill"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__.View, {
-      className: "style-info",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__.Text, {
-        className: "style-name",
-        children: name
-      }), isVip && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__.View, {
-        className: "vip-tag",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__.Text, {
-          className: "vip-text",
-          children: "VIP"
-        })
-      })]
-    })]
-  });
-};
-/* harmony default export */ __webpack_exports__["default"] = (StyleCard);
-
-/***/ }),
-
-/***/ "./src/components/index.ts":
-/*!*********************************!*\
-  !*** ./src/components/index.ts ***!
-  \*********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ColorPicker: function() { return /* reexport safe */ _ColorPicker__WEBPACK_IMPORTED_MODULE_0__["default"]; },
-/* harmony export */   StyleCard: function() { return /* reexport safe */ _StyleCard__WEBPACK_IMPORTED_MODULE_1__["default"]; }
-/* harmony export */ });
-/* harmony import */ var _ColorPicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ColorPicker */ "./src/components/ColorPicker/index.tsx");
-/* harmony import */ var _StyleCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StyleCard */ "./src/components/StyleCard/index.tsx");
-
-
-
-/***/ }),
 
 /***/ "./src/constants/config.ts":
 /*!*********************************!*\
@@ -105,14 +7,14 @@ var StyleCard = function StyleCard(_ref) {
   \*********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   BASE_URL: function() { return /* binding */ BASE_URL; }
 /* harmony export */ });
-/* unused harmony exports API_BASE_URL, UPLOAD_URL, MEMBER_TYPES, AVATAR_STATUS */
-var API_BASE_URL =  true ? 'http://localhost:8080' : 0;
-var BASE_URL = 'http://localhost:8080';
-var UPLOAD_URL = "".concat(API_BASE_URL, "/api/v1/upload");
+/* unused harmony exports UPLOAD_URL, MEMBER_TYPES, AVATAR_STATUS */
+var BASE_URL =  true ? 'http://192.168.1.12:8080' // 开发环境，使用HTTPS
+: 0; // 生产环境
+
+var UPLOAD_URL = "".concat(BASE_URL, "/api/v1/upload");
 var MEMBER_TYPES = {
   MONTHLY: 1,
   YEARLY: 2
@@ -131,14 +33,14 @@ var AVATAR_STATUS = {
   \*****************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   avatarApi: function() { return /* binding */ avatarApi; },
+/* harmony export */   generateAvatar: function() { return /* binding */ generateAvatar; },
 /* harmony export */   memberApi: function() { return /* binding */ memberApi; },
 /* harmony export */   uploadImage: function() { return /* binding */ uploadImage; },
 /* harmony export */   userApi: function() { return /* binding */ userApi; }
 /* harmony export */ });
-/* unused harmony exports updateStyle, generateAvatar, getAvatarResult */
+/* unused harmony exports updateStyle, getAvatarResult */
 /* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/regeneratorRuntime.js */ "./node_modules/@babel/runtime/helpers/esm/regeneratorRuntime.js");
 /* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
@@ -152,6 +54,10 @@ var AVATAR_STATUS = {
 // 用户相关接口
 var userApi = {
   login: function login(data) {
+    console.log('开始登录请求:', {
+      url: "".concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__.BASE_URL, "/api/v1/users/login"),
+      data: data
+    });
     return _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().request({
       url: "".concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__.BASE_URL, "/api/v1/users/login"),
       method: 'POST',
@@ -159,7 +65,25 @@ var userApi = {
         code: data.code,
         avatarUrl: data.avatarUrl,
         nickName: data.nickName
+      },
+      timeout: 60000,
+      // 增加到60秒
+      enableHttp2: false,
+      enableQuic: false,
+      enableCache: false,
+      header: {
+        'Content-Type': 'application/json'
       }
+    }).then(function (res) {
+      console.log('登录响应:', res);
+      return res;
+    }).catch(function (err) {
+      console.error('登录请求失败:', {
+        error: err,
+        errorMessage: err.errMsg,
+        requestTask: err.requestTask
+      });
+      throw err;
     });
   },
   getProfile: function getProfile() {
@@ -197,19 +121,17 @@ var avatarApi = {
       }
     });
   },
-  getResult: function () {
-    var _getResult = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_2__["default"])(/*#__PURE__*/(0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_3__["default"])().mark(function _callee(taskId) {
+  updateParams: function () {
+    var _updateParams = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_2__["default"])(/*#__PURE__*/(0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_3__["default"])().mark(function _callee(taskId, params) {
       var res;
       return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_3__["default"])().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
             _context.next = 2;
             return _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().request({
-              url: "".concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__.BASE_URL, "/api/v1/avatar/result/").concat(taskId),
-              method: 'GET',
-              header: {
-                'Authorization': "Bearer ".concat(_tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().getStorageSync('token'))
-              }
+              url: "".concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__.BASE_URL, "/api/avatar/").concat(taskId, "/params"),
+              method: 'PUT',
+              data: params
             });
           case 2:
             res = _context.sent;
@@ -220,21 +142,21 @@ var avatarApi = {
         }
       }, _callee);
     }));
-    function getResult(_x) {
-      return _getResult.apply(this, arguments);
+    function updateParams(_x, _x2) {
+      return _updateParams.apply(this, arguments);
     }
-    return getResult;
+    return updateParams;
   }(),
-  updateParams: function () {
-    var _updateParams = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_2__["default"])(/*#__PURE__*/(0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_3__["default"])().mark(function _callee2(taskId, params) {
+  generate: function () {
+    var _generate = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_2__["default"])(/*#__PURE__*/(0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_3__["default"])().mark(function _callee2(taskId, params) {
       var res;
       return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_3__["default"])().wrap(function _callee2$(_context2) {
         while (1) switch (_context2.prev = _context2.next) {
           case 0:
             _context2.next = 2;
             return _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().request({
-              url: "".concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__.BASE_URL, "/api/avatar/").concat(taskId, "/params"),
-              method: 'PUT',
+              url: "".concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__.BASE_URL, "/api/avatar/").concat(taskId, "/generate"),
+              method: 'POST',
               data: params
             });
           case 2:
@@ -246,22 +168,24 @@ var avatarApi = {
         }
       }, _callee2);
     }));
-    function updateParams(_x2, _x3) {
-      return _updateParams.apply(this, arguments);
+    function generate(_x3, _x4) {
+      return _generate.apply(this, arguments);
     }
-    return updateParams;
+    return generate;
   }(),
-  generate: function () {
-    var _generate = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_2__["default"])(/*#__PURE__*/(0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_3__["default"])().mark(function _callee3(taskId, params) {
+  getTaskResult: function () {
+    var _getTaskResult = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_2__["default"])(/*#__PURE__*/(0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_3__["default"])().mark(function _callee3(taskId) {
       var res;
       return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_3__["default"])().wrap(function _callee3$(_context3) {
         while (1) switch (_context3.prev = _context3.next) {
           case 0:
             _context3.next = 2;
             return _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().request({
-              url: "".concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__.BASE_URL, "/api/avatar/").concat(taskId, "/generate"),
-              method: 'POST',
-              data: params
+              url: "".concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__.BASE_URL, "/api/v1/avatars/result/").concat(taskId),
+              method: 'GET',
+              header: {
+                'Authorization': "Bearer ".concat(_tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().getStorageSync('token'))
+              }
             });
           case 2:
             res = _context3.sent;
@@ -272,10 +196,10 @@ var avatarApi = {
         }
       }, _callee3);
     }));
-    function generate(_x4, _x5) {
-      return _generate.apply(this, arguments);
+    function getTaskResult(_x5) {
+      return _getTaskResult.apply(this, arguments);
     }
-    return generate;
+    return getTaskResult;
   }()
 };
 
@@ -306,7 +230,7 @@ var memberApi = {
 // 上传图片
 var uploadImage = function uploadImage(filePath) {
   return _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().uploadFile({
-    url: "".concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__.BASE_URL, "/api/v1/avatars"),
+    url: "".concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__.BASE_URL, "/api/v1/avatars/upload"),
     filePath: filePath,
     name: 'file',
     header: {
@@ -318,7 +242,7 @@ var uploadImage = function uploadImage(filePath) {
 // 更新风格
 var updateStyle = function updateStyle(imageId, styleId) {
   return _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().request({
-    url: "".concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__.BASE_URL, "/api/v1/avatar/style"),
+    url: "".concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__.BASE_URL, "/api/v1/avatars/style"),
     method: 'POST',
     data: {
       imageId: imageId,
@@ -331,16 +255,15 @@ var updateStyle = function updateStyle(imageId, styleId) {
 };
 
 // 生成头像
-var generateAvatar = function generateAvatar(imageId) {
+var generateAvatar = function generateAvatar(url, styleType) {
   return _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().request({
-    url: "".concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__.BASE_URL, "/api/v1/avatar/generate"),
+    url: "".concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__.BASE_URL, "/api/v1/avatars/generate"),
     method: 'POST',
-    data: {
-      imageId: imageId
-    },
     header: {
+      'Content-Type': 'application/x-www-form-urlencoded',
       'Authorization': "Bearer ".concat(_tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().getStorageSync('token'))
-    }
+    },
+    data: "url=".concat(encodeURIComponent(url), "&styleType=").concat(encodeURIComponent(styleType))
   });
 };
 
@@ -363,7 +286,6 @@ var getAvatarResult = function getAvatarResult(taskId) {
   \******************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 /* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
 /* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass.js */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
 /* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty.js */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
@@ -379,12 +301,14 @@ var AvatarStore = /*#__PURE__*/function () {
     (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "originalImage", '');
     (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "previewImage", '');
     (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "currentStyle", '');
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "taskStatus", '');
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "cosImageUrl", '');
     (0,mobx__WEBPACK_IMPORTED_MODULE_2__.makeAutoObservable)(this);
   }
   return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_3__["default"])(AvatarStore, [{
     key: "setTaskId",
-    value: function setTaskId(taskId) {
-      this.taskId = taskId;
+    value: function setTaskId(id) {
+      this.taskId = id;
     }
   }, {
     key: "setOriginalImage",
@@ -401,6 +325,17 @@ var AvatarStore = /*#__PURE__*/function () {
     value: function setCurrentStyle(style) {
       this.currentStyle = style;
     }
+    // 更新任务状态
+  }, {
+    key: "updateTaskStatus",
+    value: function updateTaskStatus(status) {
+      this.taskStatus = status;
+    }
+  }, {
+    key: "setCosImageUrl",
+    value: function setCosImageUrl(url) {
+      this.cosImageUrl = url;
+    }
   }]);
 }();
 /* harmony default export */ __webpack_exports__["default"] = (AvatarStore);
@@ -413,21 +348,20 @@ var AvatarStore = /*#__PURE__*/function () {
   \*****************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   StoreContext: function() { return /* binding */ StoreContext; },
+/* harmony export */   stores: function() { return /* binding */ stores; },
 /* harmony export */   useStore: function() { return /* binding */ useStore; }
 /* harmony export */ });
-/* unused harmony exports stores, StoreContext */
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/cjs/react.production.min.js");
 /* harmony import */ var _avatar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./avatar */ "./src/stores/avatar.ts");
 /* harmony import */ var _user__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./user */ "./src/stores/user.ts");
-/* harmony import */ var _user__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_user__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
 var stores = {
   avatarStore: new _avatar__WEBPACK_IMPORTED_MODULE_1__["default"](),
-  userStore: new (_user__WEBPACK_IMPORTED_MODULE_2___default())()
+  userStore: new _user__WEBPACK_IMPORTED_MODULE_2__["default"]()
 };
 var StoreContext = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)(stores);
 var useStore = function useStore() {
@@ -440,9 +374,30 @@ var useStore = function useStore() {
 /*!****************************!*\
   !*** ./src/stores/user.ts ***!
   \****************************/
-/***/ (function() {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass.js */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty.js */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var mobx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! mobx */ "./node_modules/mobx/dist/mobx.esm.js");
 
 
+
+
+var UserStore = /*#__PURE__*/function () {
+  function UserStore() {
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, UserStore);
+    (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "isVip", false);
+    (0,mobx__WEBPACK_IMPORTED_MODULE_2__.makeAutoObservable)(this);
+  }
+  return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_3__["default"])(UserStore, [{
+    key: "setIsVip",
+    value: function setIsVip(vip) {
+      this.isVip = vip;
+    }
+  }]);
+}();
+/* harmony default export */ __webpack_exports__["default"] = (UserStore);
 
 /***/ })
 

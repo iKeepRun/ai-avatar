@@ -1,10 +1,8 @@
-export const API_BASE_URL = process.env.NODE_ENV === 'development' 
-  ? 'http://localhost:8080'
-  : 'https://api.example.com';
+export const BASE_URL = process.env.NODE_ENV === 'development' 
+  ? 'http://192.168.1.12:8080'  // 开发环境，使用HTTPS
+  : 'https://api.example.com';  // 生产环境
 
-export const BASE_URL = 'http://localhost:8080';
-
-export const UPLOAD_URL = `${API_BASE_URL}/api/v1/upload`;
+export const UPLOAD_URL = `${BASE_URL}/api/v1/upload`;
 
 export const MEMBER_TYPES = {
   MONTHLY: 1,

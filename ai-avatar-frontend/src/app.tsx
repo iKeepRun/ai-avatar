@@ -2,6 +2,7 @@ import { Component } from 'react'
 import { PropsWithChildren } from 'react'
 import { configure } from 'mobx'
 import './app.scss'
+import { StoreContext, stores } from './stores'
 
 configure({ enforceActions: 'never' })
 
@@ -19,7 +20,11 @@ class App extends Component<PropsWithChildren<any>> {
   }
 
   render() {
-    return this.props.children
+    return (
+      <StoreContext.Provider value={stores}>
+        {this.props.children}
+      </StoreContext.Provider>
+    )
   }
 }
 

@@ -1,0 +1,120 @@
+.pp {
+    &-container {
+      position: fixed;
+      z-index: 9999;
+    }
+  
+    &-mask {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      animation: ppFadeIn 0.2s cubic-bezier(0.55, 0, 0.55, 0.2) forwards;
+      background: rgba(4, 8, 18, 0.4);
+    }
+  
+    &-wrap {
+      max-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 36px 36px 0;
+      border-radius: 40px 40px 0 0;
+      animation: ppSlideUpIn 0.2s cubic-bezier(0.55, 0, 0.55, 0.2);
+      background: #fff;
+    }
+  
+    &-head {
+      flex-shrink: 0;
+  
+      &-title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        color: #1f242e;
+      }
+    }
+  
+    &-link {
+      color: #3098ff;
+    }
+  
+    &-content {
+      margin: 28px 0;
+      font-size: 32px;
+      line-height: 48px;
+      color: #4d535c;
+  
+    }
+  
+    &-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+  
+    &-btn {
+      display: block;
+      width: 280px;
+      padding: 28px;
+      border: none;
+      box-shadow: 0 4px 16px rgba(46, 87, 234, 0.2);
+      background: radial-gradient(
+            94.86% 3821.12% at 91.96% 50%,
+            rgba(63, 220, 255, 0.38) 0%,
+            rgba(26, 241, 255, 0) 100%
+          ),
+          linear-gradient(262.71deg, #3098ff 5.67%, #3c70ff 94.33%);
+      border-radius: 16px;
+      color: #fff;
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 600;
+      box-sizing: border-box;
+      margin: 0 auto;
+      
+     &::after {
+      border: none;
+     }
+  
+      &_refuse {
+        background: #fff;
+        border: 1px solid #e9e9e9;
+        color: #4d535c;
+        box-shadow: none;
+      }
+    }
+    
+    &-safearea {
+      display: block;
+      width: 100%;
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+  
+    @keyframes ppSlideUpIn {
+      0% {
+        transform: translate(0, 100%);
+      }
+  
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+  
+    @keyframes ppFadeIn {
+      0% {
+        opacity: 0;
+      }
+  
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  

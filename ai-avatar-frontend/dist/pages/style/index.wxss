@@ -1,6 +1,82 @@
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/@tarojs/webpack5-runner/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[0].use[1]!./node_modules/@tarojs/webpack5-runner/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[0].use[2]!./node_modules/@tarojs/webpack5-runner/node_modules/resolve-url-loader/index.js!./node_modules/@tarojs/webpack5-runner/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[0].use[4]!./src/pages/style/index.scss ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.style {
-  padding: 20rpx;
+.style-page {
+  background: #fff;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: 500;
+  text-align: center;
+  padding: 15rpx 0;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rpx;
+  padding: 15rpx;
+}
+
+.style-card {
+  background: #f5f5f5;
+  border-radius: 10rpx;
+  height: 120rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.style-card .icon {
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: 8rpx;
+}
+
+.style-card .name {
+  font-size: 24rpx;
+  color: #333;
+}
+
+.vip-section {
+  padding: 0 15rpx;
+}
+
+.vip-section .vip-title {
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  margin-bottom: 10rpx;
+}
+
+.vip-section .vip-title .crown {
+  width: 24rpx;
+  height: 24rpx;
+  margin-right: 5rpx;
+}
+
+.vip-section .vip-card {
+  background: #f5f5f5;
+  border-radius: 10rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.vip-section .vip-card .icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-bottom: 8rpx;
+  opacity: 0.5;
+}
+
+.vip-section .vip-card .name {
+  font-size: 24rpx;
+  color: #888;
 }

@@ -247,6 +247,54 @@ var EditPage = function EditPage() {
 
 /***/ }),
 
+/***/ "./src/components/ColorPicker/index.tsx":
+/*!**********************************************!*\
+  !*** ./src/components/ColorPicker/index.tsx ***!
+  \**********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+/* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/plugin-platform-weapp/dist/components-react.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/cjs/react-jsx-runtime.production.min.js");
+
+
+
+var ColorPicker = function ColorPicker(_ref) {
+  var color = _ref.color,
+    onChange = _ref.onChange;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__.View, {
+    className: "color-picker",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__.View, {
+      className: "color-preview",
+      style: {
+        backgroundColor: color
+      },
+      onClick: function onClick() {
+        // 这里应该打开颜色选择器，但微信小程序没有原生的颜色选择器
+        // 可以考虑使用第三方组件或自定义实现
+        onChange('#000000');
+      }
+    })
+  });
+};
+/* harmony default export */ __webpack_exports__["default"] = (ColorPicker);
+
+/***/ }),
+
+/***/ "./src/components/index.ts":
+/*!*********************************!*\
+  !*** ./src/components/index.ts ***!
+  \*********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ColorPicker: function() { return /* reexport safe */ _ColorPicker__WEBPACK_IMPORTED_MODULE_0__["default"]; }
+/* harmony export */ });
+/* harmony import */ var _ColorPicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ColorPicker */ "./src/components/ColorPicker/index.tsx");
+
+// export { default as StyleCard } from './StyleCard'
+
+/***/ }),
+
 /***/ "./src/pages/edit/index.tsx":
 /*!**********************************!*\
   !*** ./src/pages/edit/index.tsx ***!

@@ -4,14 +4,16 @@ class AvatarStore {
   taskId: string = ''
   originalImage: string = ''
   previewImage: string = ''
-  currentStyle: string = ''
+  currentStyle: string = '' 
+  taskStatus: string = ''
+  cosImageUrl: string = ''
 
   constructor() {
     makeAutoObservable(this)
   }
 
-  setTaskId(taskId: string) {
-    this.taskId = taskId
+  setTaskId(id: string) {
+    this.taskId = id
   }
 
   setOriginalImage(url: string) {
@@ -24,6 +26,13 @@ class AvatarStore {
 
   setCurrentStyle(style: string) {
     this.currentStyle = style
+  }
+  // 更新任务状态
+  updateTaskStatus(status: string) {
+    this.taskStatus = status
+  }
+  setCosImageUrl(url: string) {
+    this.cosImageUrl = url
   }
 }
 

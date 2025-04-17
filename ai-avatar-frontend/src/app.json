@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "AI头像生成器",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "requiredPrivateInfos": [
+    "chooseImage",
+    "chooseMedia"
+  ],
+  "permission": {
+    "scope.writePhotosAlbum": {
+      "desc": "上传图片需要使用您的相册权限"
+    },
+    "scope.camera": {
+      "desc": "拍照功能需要使用您的相机权限"
+    }
+  },
+  "privacy": {
+    "privacyContractName": "用户隐私保护指引",
+    "privacyContractUrl": "https://example.com/privacy",
+    "privacyContractVersion": "1.0.0"
+  },
+  "plugins": {},
+  "useExtendedLib": {
+    "weui": true
+  },
+  "resolveAlias": {
+    "@/*": "/*"
+  },
+  "darkmode": true,
+  "themeLocation": "theme.json",
+  "requiredBackgroundModes": [],
+  "usingComponents": {},
+  "functionalPages": {
+    "independent": true
+  }
+} 

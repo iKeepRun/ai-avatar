@@ -40,5 +40,7 @@ export default defineAppConfig({
         selectedIconPath: 'assets/images/member-active.png'
       }
     ]
-  }
+  },
+  // requiredPrivateInfos: ['getUserProfile'],
+  __usePrivacyCheck__: true
 }) 
