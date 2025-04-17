@@ -52,4 +52,8 @@ public class AvatarGenerationTask implements Serializable {
      * 错误消息
      */
     private String errorMessage;
+
+    private String chatId;
+
+    private String conversationId;
 }

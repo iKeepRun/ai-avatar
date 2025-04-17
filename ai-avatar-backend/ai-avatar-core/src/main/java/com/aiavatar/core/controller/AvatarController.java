@@ -1,8 +1,11 @@
 package com.aiavatar.core.controller;
 
+import cn.hutool.json.JSONUtil;
+import com.aiavatar.common.model.AvatarGenerationTask;
 import com.aiavatar.common.model.Result;
 import com.aiavatar.core.service.AvatarService;
 import com.aiavatar.common.util.RedisUtil;
+import com.aiavatar.core.service.StorageService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -13,7 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 
 @RestController
-@RequestMapping("/api/v1/avatars")
+@RequestMapping("/v1/avatars")
 @Api(tags = "头像生成接口")
 @Slf4j
 public class AvatarController {
@@ -21,23 +24,38 @@ public class AvatarController {
     private RedisUtil redisUtil;
     @Autowired
     private AvatarService avatarService;
+    @Autowired
+    private StorageService storageService;
+    @ApiOperation("上传头像")
+    @PostMapping("/upload")
+    public Result<String> uploadAvatar(@RequestParam("file") MultipartFile file, HttpServletRequest request) {
+        Long currentUserId = getCurrentUserId(request);
+        return Result.success(storageService.uploadFile(file, String.format("original/%s", currentUserId)));
 
-    @PostMapping
+    }
+
+    @PostMapping("/generate")
     @ApiOperation("创建头像生成任务")
-    public Result<String> generateAvatar(@RequestParam("file") MultipartFile file,
-                                         @RequestParam(required = false) String styleType,HttpServletRequest request) {
+    public Result<String> generateAvatar(@RequestParam("url") String url,
+                                         @RequestParam("styleType") String styleType, HttpServletRequest request) {
         Long currentUserId = getCurrentUserId(request);
         if (currentUserId == null) {
             return Result.failure("用户未登录");
         }
 
-        return avatarService.createGenerationTask(file, styleType,currentUserId);
+        return avatarService.createGenerationTask(url, styleType, currentUserId);
     }
 
-    @GetMapping("/{taskId}")
+    @GetMapping("/result/{taskId}")
     @ApiOperation("获取生成结果")
-    public Result<String> getGenerateResult(@PathVariable String taskId) {
-        return avatarService.getGenerationResult(taskId);
+    public Result<AvatarGenerationTask> getGenerateResult(@PathVariable String taskId) {
+        String o = (String) redisUtil.get(taskId);
+        AvatarGenerationTask task=new AvatarGenerationTask();
+        if (o != null) {
+           task= JSONUtil.toBean(o,AvatarGenerationTask.class);
+            return Result.success(task);
+        }
+        return Result.success(task);
     }
 
     @PutMapping("/{taskId}/style")
@@ -52,8 +70,7 @@ public class AvatarController {
     private Long getCurrentUserId(HttpServletRequest request) {
         // TODO: 从JWT token中获取用户ID
         // TODO: 从JWT token中获取用户ID
-        String  userId = (String) redisUtil.get(request.getHeader("Authorization").substring(7));
-        return Long.valueOf(userId);
+        return avatarService.currentUser(request);
     }
 
 }
