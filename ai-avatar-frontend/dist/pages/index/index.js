@@ -65,49 +65,33 @@ function Index() {
   });
   var handleChooseImage = /*#__PURE__*/function () {
     var _ref = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_8__["default"])(/*#__PURE__*/(0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_9__["default"])().mark(function _callee() {
-      var privacyAgreed, res, errMsg;
+      var res, errMsg;
       return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_9__["default"])().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
             _context.prev = 0;
-            // 先检查隐私协议
-            privacyAgreed = _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().getStorageSync('privacyAgreed');
-            console.log('隐私协议状态:', privacyAgreed);
-            if (privacyAgreed) {
-              _context.next = 6;
-              break;
-            }
-            setError('请先同意隐私协议');
-            return _context.abrupt("return");
-          case 6:
             console.log('开始选择图片...');
 
             // 选择图片
-            _context.next = 9;
-            return _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().chooseImage({
+            _context.next = 4;
+            return _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().chooseMedia({
               count: 1,
-              sourceType: ['album', 'camera'],
-              // 先只提供相册选项
-              sizeType: ['compressed']
+              mediaType: ['image']
             });
-          case 9:
+          case 4:
             res = _context.sent;
-            console.log('选择图片结果:', {
-              tempFilePaths: res.tempFilePaths,
-              errMsg: res.errMsg
-            });
-            if (res.tempFilePaths && res.tempFilePaths[0]) {
-              console.log('设置图片路径:', res.tempFilePaths[0]);
-              setImageUrl(res.tempFilePaths[0]);
+            if (res.tempFiles && res.tempFiles[0]) {
+              console.log('设置图片路径:', res.tempFiles[0]);
+              setImageUrl(res.tempFiles[0].tempFilePath);
               setError('');
             } else {
               console.error('未获取到图片路径');
               setError('未获取到图片，请重试');
             }
-            _context.next = 20;
+            _context.next = 14;
             break;
-          case 14:
-            _context.prev = 14;
+          case 8:
+            _context.prev = 8;
             _context.t0 = _context["catch"](0);
             console.error('选择图片失败:', {
               error: _context.t0,
@@ -144,11 +128,11 @@ function Index() {
               });
               setError("\u9009\u62E9\u56FE\u7247\u5931\u8D25: ".concat(errMsg));
             }
-          case 20:
+          case 14:
           case "end":
             return _context.stop();
         }
-      }, _callee, null, [[0, 14]]);
+      }, _callee, null, [[0, 8]]);
     }));
     return function handleChooseImage() {
       return _ref.apply(this, arguments);
@@ -156,7 +140,7 @@ function Index() {
   }();
   var handleNext = /*#__PURE__*/function () {
     var _ref2 = (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_8__["default"])(/*#__PURE__*/(0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_9__["default"])().mark(function _callee2() {
-      var token, uploadRes, result;
+      var uploadRes, result;
       return (0,D_code_ai_avatar_ai_avatar_frontend_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_9__["default"])().wrap(function _callee2$(_context2) {
         while (1) switch (_context2.prev = _context2.next) {
           case 0:
@@ -167,23 +151,21 @@ function Index() {
             setError('请先选择图片');
             return _context2.abrupt("return");
           case 3:
-            token = _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().getStorageSync('token');
-            console.log("从本地缓存中获取token", token);
-            if (token) {
-              _context2.next = 8;
-              break;
-            }
-            _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().navigateTo({
-              url: '/pages/login/index'
-            });
-            return _context2.abrupt("return");
-          case 8:
+            // const token = Taro.getStorageSync('token')
+            // console.log("从本地缓存中获取token",token)
+            // if (!token) {
+            //   Taro.navigateTo({
+            //     url: '/pages/login/index'
+            //   })
+            //   return
+            // }
+
             setLoading(true);
             setError('');
-            _context2.prev = 10;
-            _context2.next = 13;
+            _context2.prev = 5;
+            _context2.next = 8;
             return (0,_services_api__WEBPACK_IMPORTED_MODULE_2__.uploadImage)(imageUrl);
-          case 13:
+          case 8:
             uploadRes = _context2.sent;
             result = JSON.parse(uploadRes.data); //设置 头像store 的 taskId
             // avatarStore.setTaskId(result.data)
@@ -195,22 +177,22 @@ function Index() {
             _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().navigateTo({
               url: "/pages/style/index"
             });
-            _context2.next = 24;
+            _context2.next = 19;
             break;
-          case 20:
-            _context2.prev = 20;
-            _context2.t0 = _context2["catch"](10);
+          case 15:
+            _context2.prev = 15;
+            _context2.t0 = _context2["catch"](5);
             console.error('上传失败:', _context2.t0);
             setError('上传失败，请重试');
-          case 24:
-            _context2.prev = 24;
+          case 19:
+            _context2.prev = 19;
             setLoading(false);
-            return _context2.finish(24);
-          case 27:
+            return _context2.finish(19);
+          case 22:
           case "end":
             return _context2.stop();
         }
-      }, _callee2, null, [[10, 20, 24, 27]]);
+      }, _callee2, null, [[5, 15, 19, 22]]);
     }));
     return function handleNext() {
       return _ref2.apply(this, arguments);

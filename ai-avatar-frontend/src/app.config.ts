@@ -1,7 +1,7 @@
 export default defineAppConfig({
   pages: [
-    'pages/index/index',
     'pages/login/index',
+    'pages/index/index',
     'pages/style/index',
     'pages/edit/index',
     'pages/result/index',
@@ -41,6 +41,5 @@ export default defineAppConfig({
       }
     ]
   },
-  // requiredPrivateInfos: ['getUserProfile'],
-  __usePrivacyCheck__: true
+  // __usePrivacyCheck__: true
 }) 

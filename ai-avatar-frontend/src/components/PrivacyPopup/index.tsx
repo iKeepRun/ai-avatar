@@ -1,47 +1,20 @@
-import  {  useEffect, useState} from 'react';
-import { View, Text, Button } from '@tarojs/components';
+import { useEffect, useState } from 'react';
+import { View, Button } from '@tarojs/components';
 import './index.scss';
-import { useDidShow } from '@tarojs/taro';
-import Taro from '@tarojs/taro'
-
-
-let privacyHandler;
-let privacyResolves = new Set<Function>();
 
 
 // PrivacyPopup.tsx
 interface Props {
-    visible: boolean;
-    onAgree?: () => void;
-    onDisagree?: () => void;
-  }
-  
-  
-
-if (Taro?.onNeedPrivacyAuthorization) {
-  Taro?.onNeedPrivacyAuthorization(resolve => {
-    privacyHandler?.(resolve);
-  });
+  visible: boolean;
+  onAgree: () => void;
+  onDisagree: () => void;
 }
 
-export default function PrivacyPopup (props:Props) {
-    console.log("ppppppp",props)
-  const [visible, setVisible] = useState<boolean>(props.visible);
 
-  // 当props.visible变化时更新本地状态
-  useEffect(() => {
-    setVisible(props.visible);
-  }, [props.visible]);
+
+export default function PrivacyPopup(props: Props) {
 
   const handleDisagree = () => {
-    setVisible(false);
-    privacyResolves.forEach(resolve => {
-      resolve({
-        event: 'disagree'
-      });
-    });
-    privacyResolves.clear();
-    // 调用父组件的onDisagree回调
     if (props.onDisagree) {
       props.onDisagree();
     }
@@ -49,67 +22,18 @@ export default function PrivacyPopup (props:Props) {
 
   const handleAgree = async () => {
     console.log('PrivacyPopup: 用户点击同意按钮');
-    
-    try {
-      // 先调用微信的隐私授权API
-      await Taro.requirePrivacyAuthorize();
-      
-      // 处理所有等待中的隐私授权请求
-      privacyResolves.forEach(resolve => {
-        resolve({
-          event: 'agree',
-          buttonId: 'agree-btn'
-        });
-      });
-      privacyResolves.clear();
-      
-      // 更新UI状态
-      setVisible(false);
-      
-      // 调用父组件的onAgree回调
-      if (props.onAgree) {
-        console.log('PrivacyPopup: 调用父组件的onAgree回调');
-        props.onAgree();
-      }
-    } catch (err) {
-      console.error('隐私授权失败:', err);
-      Taro.showToast({
-        title: '隐私授权失败，请重试',
-        icon: 'none'
-      });
+    // 调用父组件的onAgree回调
+    if (props.onAgree) {
+      console.log('PrivacyPopup: 调用父组件的onAgree回调');
+      props.onAgree();
     }
   };
 
-  useEffect(() => {
-    privacyHandler = resolve => {
-      privacyResolves.add(resolve);
-      setVisible(true);
-    };
-  }, []);
-  
-  // useDidShow还需要调用的原因：比如当前页面需要隐私弹窗，但未触发弹出，允许用户点有些按钮跳转去其他需要隐私弹窗的页面。用户再回退当前页面，此时privacyHandler要重新设置成当前页面的弹窗
-  useDidShow(() => {
-    privacyHandler = resolve => {
-      privacyResolves.add(resolve);
-      setVisible(true);
-    };
-  });
-
-  const openPrivacyContract = () => {
-    Taro?.openPrivacyContract({
-      success: () => {
-        console.log('openPrivacyContract success');
-      },
-      fail: res => {
-        console.error('openPrivacyContract fail', res);
-      }
-    });
-  };
 
   return (
     <View className="pp-container">
-      {visible && <View className="pp-mask" />}
-      {visible && (
+      {props.visible && <View className="pp-mask" />}
+      {props.visible && (
         <View className="pp-wrap">
           <View className="pp-head">
             <View className="pp-head-title">用户隐私保护提示</View>

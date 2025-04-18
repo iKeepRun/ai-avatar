@@ -29,32 +29,18 @@ export default function Index() {
 
   const handleChooseImage = async () => {
     try {
-      // 先检查隐私协议
-      const privacyAgreed = Taro.getStorageSync('privacyAgreed')
-      console.log('隐私协议状态:', privacyAgreed)
-      
-      if (!privacyAgreed) {
-        setError('请先同意隐私协议')
-        return
-      }
-
+     
       console.log('开始选择图片...')
       
       // 选择图片
-      const res = await Taro.chooseImage({
+      const res = await Taro.chooseMedia({
         count: 1,
-        sourceType: ['album', 'camera'],  // 先只提供相册选项
-        sizeType: ['compressed']
+        mediaType: ['image'],  
       })
 
-      console.log('选择图片结果:', {
-        tempFilePaths: res.tempFilePaths,
-        errMsg: res.errMsg
-      })
-
-      if (res.tempFilePaths && res.tempFilePaths[0]) {
-        console.log('设置图片路径:', res.tempFilePaths[0])
-        setImageUrl(res.tempFilePaths[0])
+      if (res.tempFiles && res.tempFiles[0]) {
+        console.log('设置图片路径:', res.tempFiles[0])
+        setImageUrl(res.tempFiles[0].tempFilePath)
         setError('')
       } else {
         console.error('未获取到图片路径')
@@ -108,14 +94,14 @@ export default function Index() {
       return
     }
 
-    const token = Taro.getStorageSync('token')
-    console.log("从本地缓存中获取token",token)
-    if (!token) {
-      Taro.navigateTo({
-        url: '/pages/login/index'
-      })
-      return
-    }
+    // const token = Taro.getStorageSync('token')
+    // console.log("从本地缓存中获取token",token)
+    // if (!token) {
+    //   Taro.navigateTo({
+    //     url: '/pages/login/index'
+    //   })
+    //   return
+    // }
 
     setLoading(true)
     setError('')

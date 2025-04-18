@@ -4,7 +4,7 @@ import Taro from '@tarojs/taro'
 import { observer } from 'mobx-react'
 import { useStore } from '@/stores'
 import { avatarApi } from '@/services/api'
-import { ColorPicker } from '@/components'
+import  ColorPicker from '@/components/ColorPicker'
 import './index.scss'
 
 const EditPage: FC = () => {

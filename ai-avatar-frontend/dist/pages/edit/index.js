@@ -19,7 +19,7 @@
 /* harmony import */ var mobx_react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! mobx-react */ "./node_modules/mobx-react/dist/mobxreact.esm.js");
 /* harmony import */ var _stores__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/stores */ "./src/stores/index.ts");
 /* harmony import */ var _services_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/services/api */ "./src/services/api.ts");
-/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/components */ "./src/components/index.ts");
+/* harmony import */ var _components_ColorPicker__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/components/ColorPicker */ "./src/components/ColorPicker/index.tsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/cjs/react-jsx-runtime.production.min.js");
 
 
@@ -195,7 +195,7 @@ var EditPage = function EditPage() {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__.View, {
               className: "param-label",
               children: "\u53D1\u8272"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components__WEBPACK_IMPORTED_MODULE_4__.ColorPicker, {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_ColorPicker__WEBPACK_IMPORTED_MODULE_4__["default"], {
               color: params.hairColor,
               onChange: function onChange(color) {
                 return handleParamChange('hairColor', color);
@@ -277,21 +277,6 @@ var ColorPicker = function ColorPicker(_ref) {
   });
 };
 /* harmony default export */ __webpack_exports__["default"] = (ColorPicker);
-
-/***/ }),
-
-/***/ "./src/components/index.ts":
-/*!*********************************!*\
-  !*** ./src/components/index.ts ***!
-  \*********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ColorPicker: function() { return /* reexport safe */ _ColorPicker__WEBPACK_IMPORTED_MODULE_0__["default"]; }
-/* harmony export */ });
-/* harmony import */ var _ColorPicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ColorPicker */ "./src/components/ColorPicker/index.tsx");
-
-// export { default as StyleCard } from './StyleCard'
 
 /***/ }),
 
